@@ -73,7 +73,7 @@ export default function Home() {
           <img src={logo} width="400"/>
         </div>
         <Card sx={{ display: 'flex',  flexDirection: { xs: "column", md: "row"} }}>
-          <CardContent sx={{ flex: '1 1 33%' }}>
+          <CardContent sx={{ flex: '1 1 25%' }}>
             <Typography component="div" variant="h3" sx={{ textTransform: "uppercase"}}>
               POLO MUSICALE ARTENA P.M.A.
             </Typography>
@@ -89,11 +89,11 @@ export default function Home() {
           </CardContent>
           <CardMedia
             component="img"
-            sx={{ flex: '1 1 33%' }}
+            sx={{ flex: '1 1 50%' }}
             image={piano}
             alt="piano description"
           />
-          <CardContent sx={{ flex: '1 1 33%' }}>
+          <CardContent sx={{ flex: '1 1 25%' }}>
             <Typography component="div" variant="h4" sx={{ textTransform: "uppercase"}}>
               CHI SIAMO
             </Typography>

@@ -7,7 +7,6 @@ import CardActionArea from '@mui/material/CardActionArea';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import piano from './piano.jpeg';
-import violino from './violino.jpg';
 
 function Courses(props) { 
 
@@ -52,7 +51,7 @@ function Courses(props) {
             <CardMedia
                 component="img"
                 sx={{ width: 160, display: { xs: 'none', sm: 'block' } }}
-                image={violino}
+                image={piano}
             />
             </Card>
         </CardActionArea>
