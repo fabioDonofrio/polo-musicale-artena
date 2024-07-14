@@ -68,11 +68,11 @@ export default function Home() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <CssBaseline />
-      <Container maxWidth="lg">
+      <Container maxWidth="xl">
         <div style={{ textAlign: "center"}}>
           <img src={logo} width="400"/>
         </div>
-        <Card sx={{ display: 'flex' }}>
+        <Card sx={{ display: 'flex',  flexDirection: { xs: "column", md: "row"} }}>
           <CardContent sx={{ flex: '1 1 33%' }}>
             <Typography component="div" variant="h3" sx={{ textTransform: "uppercase"}}>
               POLO MUSICALE ARTENA P.M.A.
