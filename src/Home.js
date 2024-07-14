@@ -69,7 +69,7 @@ export default function Home() {
     <ThemeProvider theme={defaultTheme}>
       <CssBaseline />
       <Container maxWidth="xl">
-        <div style={{ textAlign: "center"}}>
+        <div style={{ textAlign: "center", position: "sticky", top: "0", width: "100%", backgroundColor: defaultTheme.palette.background.default }}>
           <img src={logo} width="400"/>
         </div>
         <Card sx={{ display: 'flex',  flexDirection: { xs: "column", md: "row"} }}>
