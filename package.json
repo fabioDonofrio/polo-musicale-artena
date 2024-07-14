@@ -2,7 +2,7 @@
   "name": "coro-web-app",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://fabiodonofrio.github.io/fabiodonofrio.github.io",
+  "homepage": "https://fabiodonofrio.github.io/",
   "dependencies": {
     "@emotion/react": "latest",
     "@emotion/styled": "latest",
