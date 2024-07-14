@@ -11,7 +11,7 @@ export default function Home() {
     palette: {
       background: {
         default: '#252b39',
-      },
+      }, 
       primary: {
         main: '#ffffff1a',
         contrastText: "#ffffff"

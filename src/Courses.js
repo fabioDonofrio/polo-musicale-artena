@@ -9,7 +9,7 @@ import CardMedia from '@mui/material/CardMedia';
 import piano from './piano.jpeg';
 import violino from './violino.jpg';
 
-function Courses(props) {
+function Courses(props) { 
 
   return (
     <Grid container spacing={4}>
