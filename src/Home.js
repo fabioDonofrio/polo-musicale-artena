@@ -68,7 +68,7 @@ export default function Home() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <CssBaseline />
-      <Container maxWidth="xl">
+      <Container maxWidth="lg">
         <div style={{ textAlign: "center"}}>
           <img src={logo} width="400"/>
         </div>
