@@ -107,7 +107,10 @@ function App() {
           element={<WhoAreWe />}
         />
       </>
-    )
+    ),
+    {
+      basename: process.env.PUBLIC_URL
+    }
   );
   return (
     <ThemeProvider theme={defaultTheme}>
