@@ -109,7 +109,7 @@ function App() {
       </>
     ),
     {
-      basename: process.env.PUBLIC_URL
+      basename: '/polo-musicale-artena'
     }
   );
   return (
