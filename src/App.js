@@ -9,7 +9,7 @@ import Home from './Home';
 import './App.css';
 import WhoAreWe from "./WhoAreWe";
 import CssBaseline from '@mui/material/CssBaseline';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { createTheme, responsiveFontSizes, ThemeProvider } from '@mui/material/styles';
 
 function App() {
   let defaultTheme = createTheme({
@@ -56,6 +56,10 @@ function App() {
         color: "#BDD054",
         fontWeight: "bold"
       },
+      h7: {
+        fontFamily: "League Gothic",
+        color: "#fff"
+      },
       string: {
         fontFamily: "DM Serif Display"
       }
@@ -81,9 +85,15 @@ function App() {
       MuiToolbar: {
         styleOverrides: {
           root: {
-            justifyContent: 'center',
             overflowX: 'auto',
-            gap: "2.5%",
+            [defaultTheme.breakpoints.down('md')]: {
+              justifyContent: "flex-start",
+              gap: "0.9%"
+            },
+            [defaultTheme.breakpoints.up('md')]: {
+              gap: "2.5%",
+              justifyContent: "center"
+            },
             position: "sticky",
             backgroundColor: defaultTheme.palette.primary.light,
             color: defaultTheme.palette.primary.contrastText,
@@ -94,6 +104,10 @@ function App() {
       }
     }
   });
+
+  defaultTheme = responsiveFontSizes(defaultTheme);
+
+
 
   const router = createBrowserRouter(
     createRoutesFromElements(

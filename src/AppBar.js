@@ -1,6 +1,6 @@
 import * as React from 'react';
 import logo from "./logo pma.png";
-import { Box, Link, Toolbar } from "@mui/material";
+import { Box, Link, Toolbar, Typography } from "@mui/material";
 import Container from '@mui/material/Container';
 import { styled } from "@mui/system";
 import { useTheme } from '@mui/material/styles';
@@ -62,7 +62,7 @@ function AppBar(props) {
             display: { xs: "block", sm: "block", md: "none", lg: "none", xl: "none" }
           }}
         >
-          <img src={logo} height="50px" />
+          <img src={logo} height="30px" />
         </Box>
         {toolbarPages.map((page) => (
           <ZoomLink
@@ -75,7 +75,11 @@ function AppBar(props) {
             sx={{ p: 1, flexShrink: 0, fontFamily: "inherit", fontSize: "inherit" }}
             underline="none"
           >
-            {page.title}
+            <Typography
+              variant='h7'
+            >
+              {page.title}
+            </Typography>
           </ZoomLink>
         ))}
       </Toolbar>

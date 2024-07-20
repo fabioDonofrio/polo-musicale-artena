@@ -42,7 +42,7 @@ export default function Home() {
                 component="img"
                 image={piano}
                 alt="piano description"
-                sx={{ height: "400px" }}
+                sx={{ height: "300px" }}
               />
               <CardContent sx={{ position: "absolute", top: "0%", left: "2%" }}>
                 <Typography component="div" variant="h2" sx={{ textTransform: "uppercase" }}>
