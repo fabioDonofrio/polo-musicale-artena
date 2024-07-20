@@ -4,7 +4,7 @@ import { Box, Link, Toolbar } from "@mui/material";
 import Container from '@mui/material/Container';
 import { styled } from "@mui/system";
 import { useTheme } from '@mui/material/styles';
-import { useNavigate } from "react-router-dom";
+import { Link as RouterLink, useNavigate } from "react-router-dom";
 
 function AppBar(props) {
   const headerHeight = "199px";
@@ -67,10 +67,11 @@ function AppBar(props) {
         {toolbarPages.map((page) => (
           <ZoomLink
             color="inherit"
+            component={RouterLink}
             noWrap
             key={page.title}
             variant="body2"
-            href={page.href}
+            to={page.href}
             sx={{ p: 1, flexShrink: 0, fontFamily: "inherit", fontSize: "inherit" }}
             underline="none"
           >
