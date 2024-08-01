@@ -4,8 +4,11 @@ import { styled } from "@mui/system";
 import Container from '@mui/material/Container';
 import piano from "./piano.jpeg";
 import AppBar from './AppBar'
+import SocialFooter from './SocialFooter';
+import { useTheme } from '@mui/material/styles';
 
 export default function Home() {
+  const theme = useTheme();
 
   const ZoomCard = styled(Card)({
     borderBottom: '7px solid rgba(255,255,255, 0.3)',
@@ -79,6 +82,7 @@ export default function Home() {
           ))}
         </Grid>
       </Container>
+      <SocialFooter />
     </React.Fragment>
   )
 }
