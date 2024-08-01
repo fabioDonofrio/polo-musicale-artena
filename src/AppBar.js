@@ -1,5 +1,5 @@
 import * as React from 'react';
-import logo from "./logo pma.png";
+import logo from "./logo-pma.webp";
 import { Box, Link, Toolbar, Typography } from "@mui/material";
 import Container from '@mui/material/Container';
 import { styled } from "@mui/system";

@@ -6,56 +6,56 @@ import Card from '@mui/material/Card';
 import CardActionArea from '@mui/material/CardActionArea';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import piano from './piano.jpeg';
+import piano from './piano.webp';
 
-function Courses(props) { 
+function Courses(props) {
 
   return (
     <Grid container spacing={4}>
-        <Grid item xs={12} md={6}>
+      <Grid item xs={12} md={6}>
         <CardActionArea component="a" href="#">
-            <Card sx={{ display: 'flex' }}>
+          <Card sx={{ display: 'flex' }}>
             <CardContent sx={{ flex: 1 }}>
-                <Typography component="h2" variant="h5">
+              <Typography component="h2" variant="h5">
                 corso pianoforte
-                </Typography>
-                <Typography variant="subtitle1" color="text.secondary">
+              </Typography>
+              <Typography variant="subtitle1" color="text.secondary">
                 informazioni
-                </Typography>
-                <Typography variant="subtitle1" paragraph>
+              </Typography>
+              <Typography variant="subtitle1" paragraph>
                 descrizione
-                </Typography>
+              </Typography>
             </CardContent>
             <CardMedia
-                component="img"
-                sx={{ width: 160, display: { xs: 'none', sm: 'block' } }}
-                image={piano}
+              component="img"
+              sx={{ width: 160, display: { xs: 'none', sm: 'block' } }}
+              image={piano}
             />
-            </Card>
+          </Card>
         </CardActionArea>
-        </Grid>
-        <Grid item xs={12} md={6}>
+      </Grid>
+      <Grid item xs={12} md={6}>
         <CardActionArea component="a" href="#">
-            <Card sx={{ display: 'flex' }}>
+          <Card sx={{ display: 'flex' }}>
             <CardContent sx={{ flex: 1 }}>
-                <Typography component="h2" variant="h5">
+              <Typography component="h2" variant="h5">
                 corso violino
-                </Typography>
-                <Typography variant="subtitle1" color="text.secondary">
+              </Typography>
+              <Typography variant="subtitle1" color="text.secondary">
                 informazioni
-                </Typography>
-                <Typography variant="subtitle1" paragraph>
+              </Typography>
+              <Typography variant="subtitle1" paragraph>
                 descrizione
-                </Typography>
+              </Typography>
             </CardContent>
             <CardMedia
-                component="img"
-                sx={{ width: 160, display: { xs: 'none', sm: 'block' } }}
-                image={piano}
+              component="img"
+              sx={{ width: 160, display: { xs: 'none', sm: 'block' } }}
+              image={piano}
             />
-            </Card>
+          </Card>
         </CardActionArea>
-        </Grid>
+      </Grid>
     </Grid>
   );
 }

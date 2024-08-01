@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Card, CardContent, CardMedia, Grid, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 import Container from '@mui/material/Container';
-import piano from "./piano.jpeg";
+import piano from "./piano.webp";
 import AppBar from './AppBar'
 import SocialFooter from './SocialFooter';
 import { useTheme } from '@mui/material/styles';
