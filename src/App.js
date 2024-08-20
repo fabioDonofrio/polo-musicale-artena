@@ -8,6 +8,7 @@ import {
 import Home from './Home';
 import './App.css';
 import WhoAreWe from "./WhoAreWe";
+import Courses from "./Courses";
 import CssBaseline from '@mui/material/CssBaseline';
 import { createTheme, responsiveFontSizes, ThemeProvider } from '@mui/material/styles';
 
@@ -86,12 +87,12 @@ function App() {
         styleOverrides: {
           root: {
             overflowX: 'auto',
-            [defaultTheme.breakpoints.down('md')]: {
+            [defaultTheme.breakpoints.down('xs')]: {
               justifyContent: "flex-start",
               gap: "0.9%"
             },
-            [defaultTheme.breakpoints.up('md')]: {
-              gap: "2.5%",
+            [defaultTheme.breakpoints.up('xs')]: {
+              gap: "1%",
               justifyContent: "center"
             },
             position: "sticky",
@@ -119,6 +120,10 @@ function App() {
         <Route
           path="/chi-siamo"
           element={<WhoAreWe />}
+        />
+        <Route
+          path="/corsi"
+          element={<Courses />}
         />
       </>
     ),

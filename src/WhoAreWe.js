@@ -5,9 +5,10 @@ import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import piano from './piano.webp';
+import granaio from './granaio.jpg';
 import AppBar from './AppBar';
 import Container from '@mui/material/Container';
+import SocialFooter from './SocialFooter';
 
 function WhoAreWe() {
 
@@ -19,7 +20,7 @@ function WhoAreWe() {
           <Grid container>
             <Grid item xl={3} lg={3} md={3}>
               <CardContent>
-                <Typography component="div" variant="h3" sx={{ textTransform: "uppercase" }}>
+                <Typography component="div" variant="h3" sx={{ textTransform: "uppercase", textAlign: "center " }}>
                   POLO MUSICALE ARTENA P.M.A.
                 </Typography>
                 <Typography component="div" variant="string">
@@ -33,11 +34,11 @@ function WhoAreWe() {
                 </Typography>
               </CardContent>
             </Grid>
-            <Grid item xl={6} lg={6} md={6}>
+            <Grid item xl={6} lg={6} md={6} sx={{ height: "700px" }}>
               <CardMedia
                 component="img"
-                image={piano}
-                alt="piano description"
+                image={granaio}
+                sx={{ height: "100%", width: "100%", objectFit: "cover" }}
               />
             </Grid>
             <Grid item xl={3} lg={3} md={3}>
@@ -69,6 +70,7 @@ function WhoAreWe() {
           </Grid>
         </Card>
       </Container>
+      <SocialFooter />
     </React.Fragment>
   );
 }

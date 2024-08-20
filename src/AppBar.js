@@ -5,11 +5,12 @@ import Container from '@mui/material/Container';
 import { styled } from "@mui/system";
 import { useTheme } from '@mui/material/styles';
 import { Link as RouterLink, useNavigate } from "react-router-dom";
+import Home from '@mui/icons-material/Home';
 
 function AppBar(props) {
-  const headerHeight = "199px";
 
   const toolbarPages = [
+    { icon: Home, href: "/" },
     { title: "Chi siamo", href: "/chi-siamo" },
     { title: "Corsi", href: "/corsi" },
     { title: "Docenti", href: "/docenti" },
@@ -38,32 +39,19 @@ function AppBar(props) {
         sx={{
           textAlign: "center",
           width: "100%",
-          height: headerHeight,
+          height: { xs: "100px", sm: "100px", md: "200px", lg: "200px", xl: "200px" },
           backgroundColor: theme.palette.background.default,
           zIndex: 1,
           cursor: "pointer",
-          display: { xs: "none", sm: "none", md: "block", lg: "block", xl: "block" }
         }}
       >
-        <img src={logo} height={headerHeight} />
+        <img src={logo} style={{ height: "100%", objectFit: "fill" }} />
       </Box>
       <Toolbar
         component="nav"
         variant="dense"
-        sx={{ top: headerHeight, zIndex: 1, }}
+        sx={{ top: { xs: "50px", sm: "50px", md: "200px", lg: "200px", xl: "200px" }, zIndex: 1 }}
       >
-        <Box
-          onClick={() => navigate("/")}
-          sx={{
-            textAlign: "center",
-            backgroundColor: theme.palette.background.default,
-            zIndex: 1,
-            cursor: "pointer",
-            display: { xs: "block", sm: "block", md: "none", lg: "none", xl: "none" }
-          }}
-        >
-          <img src={logo} height="30px" />
-        </Box>
         {toolbarPages.map((page) => (
           <ZoomLink
             color="inherit"
@@ -72,14 +60,17 @@ function AppBar(props) {
             key={page.title}
             variant="body2"
             to={page.href}
-            sx={{ p: 1, flexShrink: 0, fontFamily: "inherit", fontSize: "inherit" }}
+            sx={{ p: 1, flexShrink: 0, fontFamily: "inherit", fontSize: "inherit", padding: "10px", display: "flex", alignItems: "center" }}
             underline="none"
           >
-            <Typography
-              variant='h7'
-            >
-              {page.title}
-            </Typography>
+            {page.title && (
+              <Typography
+                variant='h7'
+              >
+                {page.title}
+              </Typography>
+            )}
+            {page.icon && <page.icon />}
           </ZoomLink>
         ))}
       </Toolbar>

@@ -72,7 +72,7 @@ export default function Home() {
                   image={piano}
                   alt="piano description"
                 />
-                <CardContent sx={{ position: "absolute", top: "45%", left: "2%" }}>
+                <CardContent sx={{ position: "absolute", bottom: "45%", left: "2%" }}>
                   <Typography component="div" variant="h4" sx={{ textTransform: "uppercase" }}>
                     {section}
                   </Typography>
