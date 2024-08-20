@@ -8,7 +8,7 @@ function SocialFooter() {
 
   const social = [
     { icon: FacebookIcon, href: "https://www.facebook.com/people/Nuovo-Coro-Citt%C3%A0-di-Artena/61560275930780/" },
-    { icon: InstagramIcon, href: "https://www.instagram.com/nuovocorocittadiartena/" }
+    { icon: InstagramIcon, href: "https://www.instagram.com/polomusicaleartena" }
   ]
 
   return (
