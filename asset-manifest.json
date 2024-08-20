@@ -1,17 +1,32 @@
 {
   "files": {
     "main.css": "/polo-musicale-artena/static/css/main.f855e6bc.css",
-    "main.js": "/polo-musicale-artena/static/js/main.64bf1ff2.js",
+    "main.js": "/polo-musicale-artena/static/js/main.f1301901.js",
     "static/js/453.4f53accf.chunk.js": "/polo-musicale-artena/static/js/453.4f53accf.chunk.js",
     "static/media/piano.webp": "/polo-musicale-artena/static/media/piano.04a0b046121e2e62b0bd.webp",
+    "static/media/trumpet.webp": "/polo-musicale-artena/static/media/trumpet.ff67a22efee16fd22a93.webp",
+    "static/media/accordion.webp": "/polo-musicale-artena/static/media/accordion.53338db741097d9d5a02.webp",
+    "static/media/propedeutica.webp": "/polo-musicale-artena/static/media/propedeutica.d34af500fc5427aecc55.webp",
+    "static/media/clarinet.webp": "/polo-musicale-artena/static/media/clarinet.20be4eabdc0bad36874f.webp",
+    "static/media/doubleBass.webp": "/polo-musicale-artena/static/media/doubleBass.c4e0715d10f8f73b468b.webp",
+    "static/media/flute.webp": "/polo-musicale-artena/static/media/flute.859052038dd538734416.webp",
+    "static/media/bass.webp": "/polo-musicale-artena/static/media/bass.58fa2e36ebd73f596982.webp",
+    "static/media/cello.webp": "/polo-musicale-artena/static/media/cello.de01ff477dc608b4ac97.webp",
+    "static/media/oboe.webp": "/polo-musicale-artena/static/media/oboe.b752e6a63533209a6dbd.webp",
+    "static/media/drums.webp": "/polo-musicale-artena/static/media/drums.07b6d3e6b67d3edc99b9.webp",
+    "static/media/guitar.webp": "/polo-musicale-artena/static/media/guitar.ef39b76768443e8efd00.webp",
+    "static/media/sax.webp": "/polo-musicale-artena/static/media/sax.a6d676c033b65936d0c9.webp",
+    "static/media/violin.webp": "/polo-musicale-artena/static/media/violin.8b65b2e86f898bc92201.webp",
+    "static/media/opera.webp": "/polo-musicale-artena/static/media/opera.8ccb56eeef95367b7bcb.webp",
+    "static/media/trombone.webp": "/polo-musicale-artena/static/media/trombone.4e083ec922595e848a58.webp",
     "static/media/logo-pma.webp": "/polo-musicale-artena/static/media/logo-pma.c00d1b5920c5c0572def.webp",
     "index.html": "/polo-musicale-artena/index.html",
     "main.f855e6bc.css.map": "/polo-musicale-artena/static/css/main.f855e6bc.css.map",
-    "main.64bf1ff2.js.map": "/polo-musicale-artena/static/js/main.64bf1ff2.js.map",
+    "main.f1301901.js.map": "/polo-musicale-artena/static/js/main.f1301901.js.map",
     "453.4f53accf.chunk.js.map": "/polo-musicale-artena/static/js/453.4f53accf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.64bf1ff2.js"
+    "static/js/main.f1301901.js"
   ]
 }
