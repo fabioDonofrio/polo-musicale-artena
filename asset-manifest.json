@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/polo-musicale-artena/static/css/main.f855e6bc.css",
-    "main.js": "/polo-musicale-artena/static/js/main.f1301901.js",
+    "main.js": "/polo-musicale-artena/static/js/main.0975aff8.js",
     "static/js/453.4f53accf.chunk.js": "/polo-musicale-artena/static/js/453.4f53accf.chunk.js",
     "static/media/piano.webp": "/polo-musicale-artena/static/media/piano.04a0b046121e2e62b0bd.webp",
     "static/media/trumpet.webp": "/polo-musicale-artena/static/media/trumpet.ff67a22efee16fd22a93.webp",
@@ -12,21 +12,40 @@
     "static/media/flute.webp": "/polo-musicale-artena/static/media/flute.859052038dd538734416.webp",
     "static/media/bass.webp": "/polo-musicale-artena/static/media/bass.58fa2e36ebd73f596982.webp",
     "static/media/cello.webp": "/polo-musicale-artena/static/media/cello.de01ff477dc608b4ac97.webp",
+    "static/media/caturelli.webp": "/polo-musicale-artena/static/media/caturelli.fccee4ac8b6d38717dcc.webp",
+    "static/media/santisi.webp": "/polo-musicale-artena/static/media/santisi.67625a74cb5ad044d986.webp",
+    "static/media/valeri.webp": "/polo-musicale-artena/static/media/valeri.cacf904360f3eafa78d9.webp",
+    "static/media/pizzotti.webp": "/polo-musicale-artena/static/media/pizzotti.66bcff84df080361d85b.webp",
+    "static/media/talone.webp": "/polo-musicale-artena/static/media/talone.4d20d35b0f91be72d1bb.webp",
+    "static/media/talpa.webp": "/polo-musicale-artena/static/media/talpa.c3107bdd68993d7b390a.webp",
     "static/media/oboe.webp": "/polo-musicale-artena/static/media/oboe.b752e6a63533209a6dbd.webp",
+    "static/media/diRe.webp": "/polo-musicale-artena/static/media/diRe.548428f9ef5ae4237687.webp",
+    "static/media/girolami.webp": "/polo-musicale-artena/static/media/girolami.2bbd423527646de23e8d.webp",
+    "static/media/caporilli.webp": "/polo-musicale-artena/static/media/caporilli.7787303ea7f3e2cc0df9.webp",
+    "static/media/perciballi.webp": "/polo-musicale-artena/static/media/perciballi.725f651d88d5e31e3b60.webp",
+    "static/media/petretti.webp": "/polo-musicale-artena/static/media/petretti.865866b7fea8e580ac06.webp",
+    "static/media/taloneS.webp": "/polo-musicale-artena/static/media/taloneS.955eeddb22f6294855ee.webp",
     "static/media/drums.webp": "/polo-musicale-artena/static/media/drums.07b6d3e6b67d3edc99b9.webp",
+    "static/media/roffi.webp": "/polo-musicale-artena/static/media/roffi.887a99b93a032261e706.webp",
+    "static/media/palombi.webp": "/polo-musicale-artena/static/media/palombi.3be182c296d2d78104eb.webp",
+    "static/media/raponi.webp": "/polo-musicale-artena/static/media/raponi.70d13caa9a1e2f4457a8.webp",
+    "static/media/mele.webp": "/polo-musicale-artena/static/media/mele.1268ddc29d5cfc6c94bd.webp",
+    "static/media/cecchini.webp": "/polo-musicale-artena/static/media/cecchini.704eaab1633a5952aec4.webp",
     "static/media/guitar.webp": "/polo-musicale-artena/static/media/guitar.ef39b76768443e8efd00.webp",
     "static/media/sax.webp": "/polo-musicale-artena/static/media/sax.a6d676c033b65936d0c9.webp",
+    "static/media/musto.webp": "/polo-musicale-artena/static/media/musto.d431311dee5493ed166a.webp",
     "static/media/violin.webp": "/polo-musicale-artena/static/media/violin.8b65b2e86f898bc92201.webp",
+    "static/media/latini.webp": "/polo-musicale-artena/static/media/latini.1cfa8f1ffeb9e02c9ddc.webp",
     "static/media/opera.webp": "/polo-musicale-artena/static/media/opera.8ccb56eeef95367b7bcb.webp",
     "static/media/trombone.webp": "/polo-musicale-artena/static/media/trombone.4e083ec922595e848a58.webp",
     "static/media/logo-pma.webp": "/polo-musicale-artena/static/media/logo-pma.c00d1b5920c5c0572def.webp",
     "index.html": "/polo-musicale-artena/index.html",
     "main.f855e6bc.css.map": "/polo-musicale-artena/static/css/main.f855e6bc.css.map",
-    "main.f1301901.js.map": "/polo-musicale-artena/static/js/main.f1301901.js.map",
+    "main.0975aff8.js.map": "/polo-musicale-artena/static/js/main.0975aff8.js.map",
     "453.4f53accf.chunk.js.map": "/polo-musicale-artena/static/js/453.4f53accf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.f1301901.js"
+    "static/js/main.0975aff8.js"
   ]
 }
