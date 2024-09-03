@@ -11,6 +11,7 @@ import WhoAreWe from "./WhoAreWe";
 import Courses from "./Courses";
 import CssBaseline from '@mui/material/CssBaseline';
 import { createTheme, responsiveFontSizes, ThemeProvider } from '@mui/material/styles';
+import Teachers from "./Teachers";
 
 function App() {
   let defaultTheme = createTheme({
@@ -62,7 +63,8 @@ function App() {
         color: "#fff"
       },
       string: {
-        fontFamily: "DM Serif Display"
+        fontFamily: "DM Serif Display",
+        fontSize: "18px"
       }
     },
     components: {
@@ -124,6 +126,10 @@ function App() {
         <Route
           path="/corsi"
           element={<Courses />}
+        />
+        <Route
+          path="/docenti"
+          element={<Teachers />}
         />
       </>
     ),
