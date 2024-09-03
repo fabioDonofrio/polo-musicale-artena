@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/polo-musicale-artena/static/css/main.f855e6bc.css",
-    "main.js": "/polo-musicale-artena/static/js/main.0975aff8.js",
+    "main.js": "/polo-musicale-artena/static/js/main.50f86aa7.js",
     "static/js/453.4f53accf.chunk.js": "/polo-musicale-artena/static/js/453.4f53accf.chunk.js",
     "static/media/piano.webp": "/polo-musicale-artena/static/media/piano.04a0b046121e2e62b0bd.webp",
     "static/media/trumpet.webp": "/polo-musicale-artena/static/media/trumpet.ff67a22efee16fd22a93.webp",
     "static/media/accordion.webp": "/polo-musicale-artena/static/media/accordion.53338db741097d9d5a02.webp",
+    "static/media/opera.webp": "/polo-musicale-artena/static/media/opera.007125886009092a0100.webp",
     "static/media/propedeutica.webp": "/polo-musicale-artena/static/media/propedeutica.d34af500fc5427aecc55.webp",
     "static/media/clarinet.webp": "/polo-musicale-artena/static/media/clarinet.20be4eabdc0bad36874f.webp",
     "static/media/doubleBass.webp": "/polo-musicale-artena/static/media/doubleBass.c4e0715d10f8f73b468b.webp",
@@ -36,16 +37,15 @@
     "static/media/musto.webp": "/polo-musicale-artena/static/media/musto.d431311dee5493ed166a.webp",
     "static/media/violin.webp": "/polo-musicale-artena/static/media/violin.8b65b2e86f898bc92201.webp",
     "static/media/latini.webp": "/polo-musicale-artena/static/media/latini.1cfa8f1ffeb9e02c9ddc.webp",
-    "static/media/opera.webp": "/polo-musicale-artena/static/media/opera.8ccb56eeef95367b7bcb.webp",
     "static/media/trombone.webp": "/polo-musicale-artena/static/media/trombone.4e083ec922595e848a58.webp",
     "static/media/logo-pma.webp": "/polo-musicale-artena/static/media/logo-pma.c00d1b5920c5c0572def.webp",
     "index.html": "/polo-musicale-artena/index.html",
     "main.f855e6bc.css.map": "/polo-musicale-artena/static/css/main.f855e6bc.css.map",
-    "main.0975aff8.js.map": "/polo-musicale-artena/static/js/main.0975aff8.js.map",
+    "main.50f86aa7.js.map": "/polo-musicale-artena/static/js/main.50f86aa7.js.map",
     "453.4f53accf.chunk.js.map": "/polo-musicale-artena/static/js/453.4f53accf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.0975aff8.js"
+    "static/js/main.50f86aa7.js"
   ]
 }
