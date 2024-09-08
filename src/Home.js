@@ -1,14 +1,19 @@
 import * as React from 'react';
-import { Card, CardContent, CardMedia, Grid, Typography } from "@mui/material";
+import { Card, CardActionArea, CardContent, CardMedia, Grid, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 import Container from '@mui/material/Container';
 import piano from "./piano.webp";
 import AppBar from './AppBar'
 import SocialFooter from './SocialFooter';
 import { useTheme } from '@mui/material/styles';
+import corsoDiBase from "./corsoDiBase.webp";
+import corsoPreAfam from "./corsoPreAfam.webp";
+import corsoDiStrumento from "./corsoDiStrumento.webp";
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
   const theme = useTheme();
+  const navigate = useNavigate();
 
   const ZoomCard = styled(Card)({
     borderBottom: '7px solid rgba(255,255,255, 0.3)',
@@ -20,7 +25,15 @@ export default function Home() {
     }
   })
 
-  const cardsPages = ["SCUOLA DI BASE", "PRE AFAM", "CORSO DI STRUMENTO"];
+  const cardsPages = [
+    { name: "SCUOLA DI BASE", image: corsoDiBase },
+    { name: "PRE AFAM", image: corsoPreAfam },
+    { name: "CORSO DI STRUMENTO", image: corsoDiStrumento }
+  ];
+
+  const handleSectionClick = (section) => {
+    if (section.name === "CORSO DI STRUMENTO") navigate("/corsi");
+  }
 
   return (
     <React.Fragment>
@@ -67,16 +80,18 @@ export default function Home() {
           {cardsPages.map(section => (
             <Grid item xl={4} lg={4} md={4} sm={6}>
               <ZoomCard sx={{ position: "relative" }}>
-                <CardMedia
-                  component="img"
-                  image={piano}
-                  alt="piano description"
-                />
-                <CardContent sx={{ position: "absolute", bottom: "45%", left: "2%" }}>
+                <CardActionArea component="button" onClick={() => handleSectionClick(section)}>
+                  <CardMedia
+                    component="img"
+                    image={section.image}
+                    alt="piano description"
+                  />
+                  {/* <CardContent sx={{ position: "absolute", bottom: "45%", left: "2%" }}>
                   <Typography component="div" variant="h4" sx={{ textTransform: "uppercase" }}>
-                    {section}
+                    {section.name}
                   </Typography>
-                </CardContent>
+                </CardContent> */}
+                </CardActionArea>
               </ZoomCard>
             </Grid>
           ))}

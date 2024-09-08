@@ -34,24 +34,23 @@ function Courses(props) {
 
   const [selectedCourse, setSelectedCourse] = React.useState();
   const courses = [
-    { image: propedeutica, title: "propedeutica musicale", description: "descrizione corso", teacher: "Nome Cognome" },
-    { image: keyboard, title: "pianoforte classico & tastiere", description: "descrizione corso", teacher: "Nome Cognome" },
-    { image: piano, title: "pianoforte classico & jazz", description: "descrizione corso", teacher: "Nome Cognome" },
-    { image: opera, title: "canto lirico", description: "descrizione corso", teacher: "Nome Cognome" },
-    { image: microphone, title: "canto pop", description: "descrizione corso", teacher: "Nome Cognome" },
-    { image: doubleBass, title: "contrabbasso classico & jazz", description: "descrizione corso", teacher: "Nome Cognome" },
-    { image: bass, title: "basso elettrico", description: "descrizione corso", teacher: "Nome Cognome" },
-    { image: guitar, title: "chitarra classica & moderna", description: "descrizione corso", teacher: "Nome Cognome" },
-    { image: drums, title: "batteria & percussioni", description: "descrizione corso", teacher: "Nome Cognome" },
-    { image: trumpet, title: "tromba", description: "descrizione corso", teacher: "Nome Cognome" },
-    { image: trombone, title: "trombone", description: "descrizione corso", teacher: "Nome Cognome" },
-    { image: accordion, title: "fisarmonica", description: "descrizione corso", teacher: "Nome Cognome" },
-    { image: violin, title: "violino", description: "descrizione corso", teacher: "Nome Cognome" },
-    { image: cello, title: "violocello", description: "descrizione corso", teacher: "Nome Cognome" },
-    { image: sax, title: "sax", description: "descrizione corso", teacher: "Nome Cognome" },
-    { image: flute, title: "flauto", description: "descrizione corso", teacher: "Nome Cognome" },
-    { image: oboe, title: "oboe", description: "descrizione corso", teacher: "Nome Cognome" },
-    { image: clarinet, title: "clarinetto", description: "descrizione corso", teacher: "Nome Cognome" }
+    { image: propedeutica, title: "propedeutica musicale", description: "descrizione corso", teacher: "Irene Mele" },
+    { image: keyboard, title: "pianoforte classico & tastiere", description: "descrizione corso", teacher: "Alessio Pizzotti" },
+    { image: piano, title: "pianoforte jazz", description: "descrizione corso", teacher: "Edoardo Petretti" },
+    { image: opera, title: "canto lirico", description: "descrizione corso", teacher: "Maria di Re" },
+    { image: microphone, title: "canto pop", description: "descrizione corso", teacher: "Annalaura Talpa" },
+    { image: bass, title: "contrabbasso / basso", description: "descrizione corso", teacher: "Giuseppe Talone" },
+    { image: guitar, title: "chitarra classica & moderna", description: "descrizione corso", teacher: "Fabio Perciballi" },
+    { image: drums, title: "batteria & percussioni", description: "descrizione corso", teacher: "Simone Talone" },
+    { image: trumpet, title: "tromba", description: "descrizione corso", teacher: "Mario Caporilli" },
+    { image: trombone, title: "trombone", description: "descrizione corso", teacher: "Federico Cecchini" },
+    { image: accordion, title: "fisarmonica", description: "descrizione corso", teacher: "Pietro Roffi" },
+    { image: violin, title: "violino", description: "descrizione corso", teacher: "Margherita Musto" },
+    { image: cello, title: "violoncello", description: "descrizione corso", teacher: "Angelo Maria Santisi" },
+    { image: sax, title: "sax", description: "descrizione corso", teacher: "Danilo Raponi" },
+    { image: flute, title: "flauto", description: "descrizione corso", teacher: "Ilaria Latini" },
+    { image: oboe, title: "oboe", description: "descrizione corso", teacher: "Floria Girolami" },
+    { image: clarinet, title: "clarinetto", description: "descrizione corso", teacher: "Massimo Caturelli" }
   ]
 
   const ZoomCard = styled(Card)({
