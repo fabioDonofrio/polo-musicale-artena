@@ -66,7 +66,8 @@ function AppBar(props) {
           >
             {page.title && (
               <Typography
-                variant='h7'
+                variant="h7"
+                sx={{ fontSize: { xs: "18px", sm: "18px", md: "unset", lg: "unset", xl: "unset" } }}
               >
                 {page.title}
               </Typography>

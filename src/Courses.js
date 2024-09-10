@@ -23,7 +23,13 @@ import violin from './violin.webp';
 import opera from './opera.webp';
 import flute from './flute.webp';
 import clarinet from './clarinet.webp';
-import propedeutica from './propedeutica.webp';
+import armoniaClassica from './armoniaClassica.webp';
+import hdRecording from './hdRecording.webp';
+import coro from './coro.jpg';
+import storiaDellaMusica from './storiaDellaMusica.jpg';
+import propedeuticaMusicale from './propedeuticaMusicale.jpeg';
+import banda from './banda.webp';
+import linguaInglese from './linguaInglese.webp';
 import AppBar from './AppBar';
 import { Box, Container, Grow, Modal } from '@mui/material';
 import { styled } from "@mui/system";
@@ -34,7 +40,6 @@ function Courses(props) {
 
   const [selectedCourse, setSelectedCourse] = React.useState();
   const courses = [
-    { image: propedeutica, title: "propedeutica musicale", description: "", teacher: "Irene Mele" },
     { image: keyboard, title: "pianoforte classico & tastiere", description: "", teacher: "Alessio Pizzotti" },
     { image: piano, title: "pianoforte jazz", description: "", teacher: "Edoardo Petretti" },
     { image: opera, title: "canto lirico", description: "", teacher: "Maria di Re" },
@@ -54,7 +59,14 @@ function Courses(props) {
   ]
 
   const labs = [
-    { image: solfeggio, title: "solfeggio", description: "", teacher: "" }
+    { image: solfeggio, title: "solfeggio", description: "", teacher: "" },
+    { image: armoniaClassica, title: "armonia classica", description: "", teacher: "Massimo Caturelli" },
+    { image: coro, title: "coro", description: "", teacher: "Maria di Re" },
+    { image: hdRecording, title: "hd recording", description: "", teacher: "Tiziano Palombi" },
+    { image: storiaDellaMusica, title: "storia della musica", description: "", teacher: "" },
+    { image: propedeuticaMusicale, title: "propedeutica musicale", description: "", teacher: "Irene Mele" },
+    { image: banda, title: "banda", description: "", teacher: "Federico Cecchini" },
+    { image: linguaInglese, title: "lingua inglese", description: "", teacher: "" }
   ]
 
   const ZoomCard = styled(Card)({

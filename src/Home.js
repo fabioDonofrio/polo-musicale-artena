@@ -29,11 +29,13 @@ export default function Home() {
   const cardsPages = [
     { name: "SCUOLA DI BASE", image: corsoDiBase },
     { name: "PRE AFAM", image: corsoPreAfam },
-    { name: "CORSI DI STRUMENTO", image: corsoDiStrumento }
+    { name: "CORSI DI STRUMENTO", image: corsoDiStrumento },
+    { name: "LABORATORI", image: corsoDiStrumento }
   ];
 
   const handleSectionClick = (section) => {
     if (section.name === "CORSI DI STRUMENTO") navigate("/corsi");
+    if (section.name === "LABORATORI") navigate("/laboratori");
   }
 
   return (
@@ -79,25 +81,26 @@ export default function Home() {
         </Card>
         <Grid container spacing={3}>
           {cardsPages.map(section => (
-            <Grid item xl={4} lg={4} md={4} sm={6}>
+            <Grid item xl={6} lg={6} md={6} sm={6}>
               <ZoomCard sx={{ position: "relative" }}>
                 <CardActionArea component="button" onClick={() => handleSectionClick(section)}>
                   <CardMedia
                     component="img"
                     image={section.image}
                     alt="piano description"
+                    sx={{ maxHeight: "300px" }}
                   />
                   <CardContent sx={{ position: "absolute", bottom: "55%", left: "0%", minHeight: "123px" }}>
                     <Typography component="div" variant="h3" sx={{ textTransform: "uppercase" }}>
                       {section.name}
                     </Typography>
-                    {section.name !== "CORSI DI STRUMENTO" &&
+                    {(section.name === "SCUOLA DI BASE" || section.name === "PRE AFAM") &&
                       <Typography component="div" variant="h7" sx={{ textTransform: "uppercase", fontSize: "18px" }}>
                         in collaborazione con
                       </Typography>
                     }
                   </CardContent>
-                  {section.name !== "CORSI DI STRUMENTO" &&
+                  {(section.name === "SCUOLA DI BASE" || section.name === "PRE AFAM") &&
                     <img src={conservatorio} style={{ position: "absolute", bottom: "10%", left: "35%" }} />
                   }
                 </CardActionArea>

@@ -12,6 +12,7 @@ import Courses from "./Courses";
 import CssBaseline from '@mui/material/CssBaseline';
 import { createTheme, responsiveFontSizes, ThemeProvider } from '@mui/material/styles';
 import Teachers from "./Teachers";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
   let defaultTheme = createTheme({
@@ -110,30 +111,48 @@ function App() {
 
   defaultTheme = responsiveFontSizes(defaultTheme);
 
-
-
   const router = createBrowserRouter(
     createRoutesFromElements(
       <>
         <Route
           path="/"
-          element={<Home />}
+          element={
+            <ScrollToTop>
+              <Home />
+            </ScrollToTop>
+          }
         />
         <Route
           path="/chi-siamo"
-          element={<WhoAreWe />}
+          element={
+            <ScrollToTop>
+              <WhoAreWe />
+            </ScrollToTop>
+          }
         />
         <Route
           path="/corsi"
-          element={<Courses />}
+          element={
+            <ScrollToTop>
+              <Courses />
+            </ScrollToTop>
+          }
         />
         <Route
           path="/laboratori"
-          element={<Courses showLabs />}
+          element={
+            <ScrollToTop>
+              <Courses showLabs />
+            </ScrollToTop>
+          }
         />
         <Route
           path="/docenti"
-          element={<Teachers />}
+          element={
+            <ScrollToTop>
+              <Teachers />
+            </ScrollToTop>
+          }
         />
       </>
     ),
