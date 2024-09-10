@@ -12,7 +12,7 @@ import trumpet from './trumpet.webp';
 import trombone from './trombone.webp';
 import accordion from './accordion.webp';
 import bass from './bass.webp';
-import doubleBass from './doubleBass.webp';
+import solfeggio from './solfeggio.webp';
 import microphone from './microphone.jpg';
 import guitar from './guitar.webp';
 import keyboard from './keyboard.jpg';
@@ -34,23 +34,27 @@ function Courses(props) {
 
   const [selectedCourse, setSelectedCourse] = React.useState();
   const courses = [
-    { image: propedeutica, title: "propedeutica musicale", description: "descrizione corso", teacher: "Irene Mele" },
-    { image: keyboard, title: "pianoforte classico & tastiere", description: "descrizione corso", teacher: "Alessio Pizzotti" },
-    { image: piano, title: "pianoforte jazz", description: "descrizione corso", teacher: "Edoardo Petretti" },
-    { image: opera, title: "canto lirico", description: "descrizione corso", teacher: "Maria di Re" },
-    { image: microphone, title: "canto pop", description: "descrizione corso", teacher: "Annalaura Talpa" },
-    { image: bass, title: "contrabbasso / basso", description: "descrizione corso", teacher: "Giuseppe Talone" },
-    { image: guitar, title: "chitarra classica & moderna", description: "descrizione corso", teacher: "Fabio Perciballi" },
-    { image: drums, title: "batteria & percussioni", description: "descrizione corso", teacher: "Simone Talone" },
-    { image: trumpet, title: "tromba", description: "descrizione corso", teacher: "Mario Caporilli" },
-    { image: trombone, title: "trombone", description: "descrizione corso", teacher: "Federico Cecchini" },
-    { image: accordion, title: "fisarmonica", description: "descrizione corso", teacher: "Pietro Roffi" },
-    { image: violin, title: "violino", description: "descrizione corso", teacher: "Margherita Musto" },
-    { image: cello, title: "violoncello", description: "descrizione corso", teacher: "Angelo Maria Santisi" },
-    { image: sax, title: "sax", description: "descrizione corso", teacher: "Danilo Raponi" },
-    { image: flute, title: "flauto", description: "descrizione corso", teacher: "Ilaria Latini" },
-    { image: oboe, title: "oboe", description: "descrizione corso", teacher: "Floria Girolami" },
-    { image: clarinet, title: "clarinetto", description: "descrizione corso", teacher: "Massimo Caturelli" }
+    { image: propedeutica, title: "propedeutica musicale", description: "", teacher: "Irene Mele" },
+    { image: keyboard, title: "pianoforte classico & tastiere", description: "", teacher: "Alessio Pizzotti" },
+    { image: piano, title: "pianoforte jazz", description: "", teacher: "Edoardo Petretti" },
+    { image: opera, title: "canto lirico", description: "", teacher: "Maria di Re" },
+    { image: microphone, title: "canto pop", description: "", teacher: "Annalaura Talpa" },
+    { image: bass, title: "contrabbasso / basso", description: "", teacher: "Giuseppe Talone" },
+    { image: guitar, title: "chitarra classica & moderna", description: "", teacher: "Fabio Perciballi" },
+    { image: drums, title: "batteria & percussioni", description: "", teacher: "Simone Talone" },
+    { image: trumpet, title: "tromba", description: "", teacher: "Mario Caporilli" },
+    { image: trombone, title: "trombone", description: "", teacher: "Federico Cecchini" },
+    { image: accordion, title: "fisarmonica", description: "", teacher: "Pietro Roffi" },
+    { image: violin, title: "violino", description: "", teacher: "Margherita Musto" },
+    { image: cello, title: "violoncello", description: "", teacher: "Angelo Maria Santisi" },
+    { image: sax, title: "sax", description: "", teacher: "Danilo Raponi" },
+    { image: flute, title: "flauto", description: "", teacher: "Ilaria Latini" },
+    { image: oboe, title: "oboe", description: "", teacher: "Floria Girolami" },
+    { image: clarinet, title: "clarinetto", description: "", teacher: "Massimo Caturelli" }
+  ]
+
+  const labs = [
+    { image: solfeggio, title: "solfeggio", description: "", teacher: "" }
   ]
 
   const ZoomCard = styled(Card)({
@@ -90,12 +94,16 @@ function Courses(props) {
             <Typography component="div" variant="h4" sx={{ textTransform: "uppercase" }}>
               {selectedCourse && selectedCourse.title}
             </Typography>
-            <Typography component="div" variant="h6">
-              Corso
-            </Typography>
-            <Typography variant="string" component="div">
-              {selectedCourse && selectedCourse.description}
-            </Typography>
+            {selectedCourse && selectedCourse.description && (
+              <React.Fragment>
+                <Typography component="div" variant="h6">
+                  Corso
+                </Typography>
+                <Typography variant="string" component="div">
+                  {selectedCourse && selectedCourse.description}
+                </Typography>
+              </React.Fragment>
+            )}
             <Typography component="div" variant="h6">
               Docente
             </Typography>
@@ -107,7 +115,7 @@ function Courses(props) {
       </Modal>
       <Container maxWidth="xl" sx={{ paddingBottom: "10px" }}>
         <Grid container spacing={2}>
-          {courses.map(c => (
+          {((props.showLabs && labs) || courses).map(c => (
             <Grid item xl={3} lg={4} md={6} sm={6} xs={12}>
               <CardActionArea component="button" onClick={() => setSelectedCourse(c)}>
                 <ZoomCard

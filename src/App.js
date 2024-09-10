@@ -128,6 +128,10 @@ function App() {
           element={<Courses />}
         />
         <Route
+          path="/laboratori"
+          element={<Courses showLabs />}
+        />
+        <Route
           path="/docenti"
           element={<Teachers />}
         />

@@ -9,6 +9,7 @@ import { useTheme } from '@mui/material/styles';
 import corsoDiBase from "./corsoDiBase.webp";
 import corsoPreAfam from "./corsoPreAfam.webp";
 import corsoDiStrumento from "./corsoDiStrumento.webp";
+import conservatorio from "./conservatorio.jpg";
 import { useNavigate } from "react-router-dom";
 
 export default function Home() {
@@ -28,11 +29,11 @@ export default function Home() {
   const cardsPages = [
     { name: "SCUOLA DI BASE", image: corsoDiBase },
     { name: "PRE AFAM", image: corsoPreAfam },
-    { name: "CORSO DI STRUMENTO", image: corsoDiStrumento }
+    { name: "CORSI DI STRUMENTO", image: corsoDiStrumento }
   ];
 
   const handleSectionClick = (section) => {
-    if (section.name === "CORSO DI STRUMENTO") navigate("/corsi");
+    if (section.name === "CORSI DI STRUMENTO") navigate("/corsi");
   }
 
   return (
@@ -86,11 +87,19 @@ export default function Home() {
                     image={section.image}
                     alt="piano description"
                   />
-                  {/* <CardContent sx={{ position: "absolute", bottom: "45%", left: "2%" }}>
-                  <Typography component="div" variant="h4" sx={{ textTransform: "uppercase" }}>
-                    {section.name}
-                  </Typography>
-                </CardContent> */}
+                  <CardContent sx={{ position: "absolute", bottom: "55%", left: "0%", minHeight: "123px" }}>
+                    <Typography component="div" variant="h3" sx={{ textTransform: "uppercase" }}>
+                      {section.name}
+                    </Typography>
+                    {section.name !== "CORSI DI STRUMENTO" &&
+                      <Typography component="div" variant="h7" sx={{ textTransform: "uppercase", fontSize: "18px" }}>
+                        in collaborazione con
+                      </Typography>
+                    }
+                  </CardContent>
+                  {section.name !== "CORSI DI STRUMENTO" &&
+                    <img src={conservatorio} style={{ position: "absolute", bottom: "10%", left: "35%" }} />
+                  }
                 </CardActionArea>
               </ZoomCard>
             </Grid>

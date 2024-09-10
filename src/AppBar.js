@@ -13,6 +13,7 @@ function AppBar(props) {
     { icon: Home, href: "/" },
     { title: "Chi siamo", href: "/chi-siamo" },
     { title: "Corsi", href: "/corsi" },
+    { title: "Laboratori", href: "/laboratori" },
     { title: "Docenti", href: "/docenti" },
     { title: "Contatti", href: "/contatti" },
   ];
