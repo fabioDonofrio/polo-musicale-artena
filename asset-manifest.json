@@ -1,21 +1,23 @@
 {
   "files": {
     "main.css": "/polo-musicale-artena/static/css/main.f855e6bc.css",
-    "main.js": "/polo-musicale-artena/static/js/main.f9d84fed.js",
+    "main.js": "/polo-musicale-artena/static/js/main.a4eb4d40.js",
     "static/js/453.4f53accf.chunk.js": "/polo-musicale-artena/static/js/453.4f53accf.chunk.js",
     "static/media/piano.webp": "/polo-musicale-artena/static/media/piano.04a0b046121e2e62b0bd.webp",
     "static/media/trumpet.webp": "/polo-musicale-artena/static/media/trumpet.ff67a22efee16fd22a93.webp",
     "static/media/accordion.webp": "/polo-musicale-artena/static/media/accordion.53338db741097d9d5a02.webp",
     "static/media/opera.webp": "/polo-musicale-artena/static/media/opera.007125886009092a0100.webp",
-    "static/media/propedeutica.webp": "/polo-musicale-artena/static/media/propedeutica.d34af500fc5427aecc55.webp",
     "static/media/clarinet.webp": "/polo-musicale-artena/static/media/clarinet.20be4eabdc0bad36874f.webp",
     "static/media/flute.webp": "/polo-musicale-artena/static/media/flute.859052038dd538734416.webp",
     "static/media/bass.webp": "/polo-musicale-artena/static/media/bass.58fa2e36ebd73f596982.webp",
+    "static/media/armoniaClassica.webp": "/polo-musicale-artena/static/media/armoniaClassica.3e234b0ed7cc2df3b4c3.webp",
     "static/media/cello.webp": "/polo-musicale-artena/static/media/cello.de01ff477dc608b4ac97.webp",
     "static/media/caturelli.webp": "/polo-musicale-artena/static/media/caturelli.be28f16d69a5b744f61b.webp",
     "static/media/santisi.webp": "/polo-musicale-artena/static/media/santisi.3cc12dc277b057fb9e0b.webp",
     "static/media/valeri.webp": "/polo-musicale-artena/static/media/valeri.471e7d1146b3af6b32c4.webp",
+    "static/media/banda.webp": "/polo-musicale-artena/static/media/banda.13084dc8be464844dee9.webp",
     "static/media/talone.webp": "/polo-musicale-artena/static/media/talone.9a09c046bfa6d4c2b742.webp",
+    "static/media/hdRecording.webp": "/polo-musicale-artena/static/media/hdRecording.370c1c990de37a72f515.webp",
     "static/media/talpa.webp": "/polo-musicale-artena/static/media/talpa.abd41c9dcfdf2f432520.webp",
     "static/media/solfeggio.webp": "/polo-musicale-artena/static/media/solfeggio.dea79bff1bf999a10bcf.webp",
     "static/media/pizzotti.webp": "/polo-musicale-artena/static/media/pizzotti.6962048fa8bdc31d2416.webp",
@@ -23,6 +25,7 @@
     "static/media/oboe.webp": "/polo-musicale-artena/static/media/oboe.b752e6a63533209a6dbd.webp",
     "static/media/perciballi.webp": "/polo-musicale-artena/static/media/perciballi.29386549a06cac968fcb.webp",
     "static/media/caporilli.webp": "/polo-musicale-artena/static/media/caporilli.c4a23af07f0af20698a8.webp",
+    "static/media/linguaInglese.webp": "/polo-musicale-artena/static/media/linguaInglese.589cd5d71d45cd2e691a.webp",
     "static/media/diRe.webp": "/polo-musicale-artena/static/media/diRe.5131617bf079dc3cc596.webp",
     "static/media/petretti.webp": "/polo-musicale-artena/static/media/petretti.f1228d8ab2c694cd06d4.webp",
     "static/media/drums.webp": "/polo-musicale-artena/static/media/drums.07b6d3e6b67d3edc99b9.webp",
@@ -44,11 +47,11 @@
     "static/media/logo-pma.webp": "/polo-musicale-artena/static/media/logo-pma.c00d1b5920c5c0572def.webp",
     "index.html": "/polo-musicale-artena/index.html",
     "main.f855e6bc.css.map": "/polo-musicale-artena/static/css/main.f855e6bc.css.map",
-    "main.f9d84fed.js.map": "/polo-musicale-artena/static/js/main.f9d84fed.js.map",
+    "main.a4eb4d40.js.map": "/polo-musicale-artena/static/js/main.a4eb4d40.js.map",
     "453.4f53accf.chunk.js.map": "/polo-musicale-artena/static/js/453.4f53accf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.f9d84fed.js"
+    "static/js/main.a4eb4d40.js"
   ]
 }
