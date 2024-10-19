@@ -40,7 +40,7 @@ function AppBar(props) {
         sx={{
           textAlign: "center",
           width: "100%",
-          height: { xs: "100px", sm: "100px", md: "200px", lg: "200px", xl: "200px" },
+          height: { xs: "100px", sm: "150px", md: "150px", lg: "150px", xl: "150px" },
           backgroundColor: theme.palette.background.default,
           zIndex: 1,
           cursor: "pointer",

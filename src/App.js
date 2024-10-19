@@ -13,6 +13,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import { createTheme, responsiveFontSizes, ThemeProvider } from '@mui/material/styles';
 import Teachers from "./Teachers";
 import ScrollToTop from "./ScrollToTop";
+import Contacts from "./Contacts";
 
 function App() {
   let defaultTheme = createTheme({
@@ -151,6 +152,14 @@ function App() {
           element={
             <ScrollToTop>
               <Teachers />
+            </ScrollToTop>
+          }
+        />
+        <Route
+          path="/contatti"
+          element={
+            <ScrollToTop>
+              <Contacts />
             </ScrollToTop>
           }
         />

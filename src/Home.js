@@ -11,6 +11,8 @@ import corsoPreAfam from "./corsoPreAfam.webp";
 import corsoDiStrumento from "./corsoDiStrumento.webp";
 import conservatorio from "./conservatorio.jpg";
 import { useNavigate } from "react-router-dom";
+// import FaceFeed from './FaceFeed';
+// import InstagramPosts from './InstagramPosts'; 
 
 export default function Home() {
   const theme = useTheme();
@@ -61,7 +63,7 @@ export default function Home() {
                 component="img"
                 image={piano}
                 alt="piano description"
-                sx={{ height: "300px" }}
+                sx={{ height: { xl: "250px", lg: "250px", md: "250px", sm: "250px", xs: "375px" } }}
               />
               <CardContent sx={{ position: "absolute", top: "0%", left: "2%" }}>
                 <Typography component="div" variant="h2" sx={{ textTransform: "uppercase" }}>
@@ -108,7 +110,10 @@ export default function Home() {
             </Grid>
           ))}
         </Grid>
+        <Grid container >
+        </Grid>
       </Container>
+      {/* <InstagramPosts /> */}
       <SocialFooter />
     </React.Fragment>
   )
