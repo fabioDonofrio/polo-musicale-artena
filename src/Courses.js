@@ -40,33 +40,33 @@ function Courses(props) {
 
   const [selectedCourse, setSelectedCourse] = React.useState();
   const courses = [
-    { image: keyboard, title: "pianoforte classico & tastiere", description: "", teacher: "Alessio Pizzotti" },
-    { image: piano, title: "pianoforte jazz", description: "", teacher: "Edoardo Petretti" },
-    { image: opera, title: "canto lirico", description: "", teacher: "Maria di Re" },
-    { image: microphone, title: "canto pop", description: "", teacher: "Annalaura Talpa" },
-    { image: bass, title: "contrabbasso / basso", description: "", teacher: "Giuseppe Talone" },
-    { image: guitar, title: "chitarra classica & moderna", description: "", teacher: "Fabio Perciballi" },
-    { image: drums, title: "batteria & percussioni", description: "", teacher: "Simone Talone" },
-    { image: trumpet, title: "tromba", description: "", teacher: "Mario Caporilli" },
-    { image: trombone, title: "trombone", description: "", teacher: "Federico Cecchini" },
-    { image: accordion, title: "fisarmonica", description: "", teacher: "Pietro Roffi" },
-    { image: violin, title: "violino", description: "", teacher: "Margherita Musto" },
-    { image: cello, title: "violoncello", description: "", teacher: "Angelo Maria Santisi" },
-    { image: sax, title: "sax", description: "", teacher: "Danilo Raponi" },
-    { image: flute, title: "flauto", description: "", teacher: "Ilaria Latini" },
-    { image: oboe, title: "oboe", description: "", teacher: "Floria Girolami" },
-    { image: clarinet, title: "clarinetto", description: "", teacher: "Massimo Caturelli" }
+    { image: keyboard, title: "pianoforte classico & tastiere", description: "", teachers: "Alessio Pizzotti, Tiziano Palombi" },
+    { image: piano, title: "pianoforte jazz", description: "", teachers: "Edoardo Petretti" },
+    { image: opera, title: "canto lirico", description: "", teachers: "Maria di Re" },
+    { image: microphone, title: "canto pop", description: "", teachers: "Annalaura Talpa" },
+    { image: bass, title: "contrabbasso / basso", description: "", teachers: "Giuseppe Talone" },
+    { image: guitar, title: "chitarra classica / moderna / jazz", description: "", teachers: "Fabio Perciballi, Lorenzo Mirra" },
+    { image: drums, title: "batteria & percussioni", description: "", teachers: "Simone Talone, Adolfo Valeri" },
+    { image: trumpet, title: "tromba", description: "", teachers: "Mario Caporilli" },
+    { image: trombone, title: "trombone", description: "", teachers: "Federico Cecchini" },
+    { image: accordion, title: "fisarmonica", description: "", teachers: "Pietro Roffi" },
+    { image: violin, title: "violino", description: "", teachers: "Margherita Musto, Rachele Mancini" },
+    { image: cello, title: "violoncello", description: "", teachers: "Angelo Maria Santisi, Andrea Savino" },
+    { image: sax, title: "sax", description: "", teachers: "Danilo Raponi" },
+    { image: flute, title: "flauto", description: "", teachers: "Ilaria Latini" },
+    { image: oboe, title: "oboe", description: "", teachers: "Floria Girolami" },
+    { image: clarinet, title: "clarinetto", description: "", teachers: "Massimo Caturelli" }
   ]
 
   const labs = [
-    { image: solfeggio, title: "solfeggio", description: "", teacher: "" },
-    { image: armoniaClassica, title: "armonia classica", description: "", teacher: "Massimo Caturelli" },
-    { image: coro, title: "coro", description: "", teacher: "Maria di Re" },
-    { image: hdRecording, title: "hd recording", description: "", teacher: "Tiziano Palombi" },
-    { image: storiaDellaMusica, title: "storia della musica", description: "", teacher: "" },
-    { image: propedeuticaMusicale, title: "propedeutica musicale", description: "", teacher: "Irene Mele" },
-    { image: banda, title: "banda", description: "", teacher: "Federico Cecchini" },
-    { image: linguaInglese, title: "lingua inglese", description: "", teacher: "" }
+    { image: solfeggio, title: "solfeggio", description: "", teachers: "" },
+    { image: armoniaClassica, title: "armonia classica", description: "", teachers: "Massimo Caturelli" },
+    { image: coro, title: "coro", description: "", teachers: "Maria di Re" },
+    { image: hdRecording, title: "hd recording", description: "", teachers: "Tiziano Palombi" },
+    { image: storiaDellaMusica, title: "storia della musica", description: "", teachers: "" },
+    { image: propedeuticaMusicale, title: "propedeutica musicale", description: "", teachers: "Irene Mele" },
+    { image: banda, title: "banda", description: "", teachers: "Federico Cecchini" },
+    { image: linguaInglese, title: "lingua inglese", description: "", teachers: "" }
   ]
 
   const ZoomCard = styled(Card)({
@@ -75,6 +75,7 @@ function Courses(props) {
       transition: 'transform 1s',
       transform: 'scale(1.02)',
       transformOrigin: 'top left',
+      borderBottom: '7px solid #BDD054'
     }
   })
 
@@ -117,10 +118,10 @@ function Courses(props) {
               </React.Fragment>
             )}
             <Typography component="div" variant="h6">
-              Docente
+              Docenti
             </Typography>
             <Typography variant="string" component="div">
-              {selectedCourse && selectedCourse.teacher}
+              {selectedCourse && selectedCourse.teachers}
             </Typography>
           </Box>
         </Grow>
@@ -129,17 +130,12 @@ function Courses(props) {
         <Grid container spacing={2}>
           {((props.showLabs && labs) || courses).map(c => (
             <Grid item xl={3} lg={4} md={6} sm={6} xs={12}>
-              <CardActionArea component="button" onClick={() => setSelectedCourse(c)}>
+              <CardActionArea component="button" onClick={() => { if (c.teachers) setSelectedCourse(c) }}>
                 <ZoomCard
                   sx={{
                     position: "relative",
                     display: "flex",
-                    justifyContent: "center",
-                    ...(selectedCourse && selectedCourse.title === c.title) && {
-                      borderBottom: '7px solid #BDD054',
-                      transform: 'scale(1.02)',
-                      transformOrigin: 'top left',
-                    }
+                    justifyContent: "center"
                   }}
                 >
                   <CardMedia

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Card, CardActionArea, CardContent, CardMedia, Grid, Typography } from "@mui/material";
+import { Box, Card, CardActionArea, CardContent, CardMedia, Grid, Modal, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 import Container from '@mui/material/Container';
 import piano from "./piano.webp";
@@ -10,13 +10,15 @@ import corsoDiBase from "./corsoDiBase.webp";
 import corsoPreAfam from "./corsoPreAfam.webp";
 import corsoDiStrumento from "./corsoDiStrumento.webp";
 import conservatorio from "./conservatorio.jpg";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
+import { Close } from '@mui/icons-material';
 // import FaceFeed from './FaceFeed';
 // import InstagramPosts from './InstagramPosts'; 
 
 export default function Home() {
+  const [selectedCard, setSelectedCard] = React.useState();
   const theme = useTheme();
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   const ZoomCard = styled(Card)({
     borderBottom: '7px solid rgba(255,255,255, 0.3)',
@@ -29,20 +31,44 @@ export default function Home() {
   })
 
   const cardsPages = [
-    { name: "SCUOLA DI BASE", image: corsoDiBase },
-    { name: "PRE AFAM", image: corsoPreAfam },
-    { name: "CORSI DI STRUMENTO", image: corsoDiStrumento },
-    { name: "LABORATORI", image: corsoDiStrumento }
+    { name: "SCUOLA DI BASE", image: corsoDiBase, modalDescription: "I Corsi Base sono corsi liberi e sono stati istituiti dal Conservatorio Licinio Refice al fine di offrire agli studenti, in possesso di competenze strumentali /musicali primarie o ancora da acquisire, l’opportunità di proseguire o di iniziare la loro preparazione strumentale e musicale all’interno di un contesto da sempre dedicato alla musica. La possibilità di vivere fin dall’inizio a stretto contatto con tanti altri giovani musicisti e tante Scuole strumentali e musicali costituisce una occasione unica nel sistema formativo italiano di tradizione. I Corsi Base si concludono con un Esame di Certificazione. Gli studi possono poi continuare con l’ iscrizione ai Corsi Propedeutici AFAM." },
+    { name: "PRE AFAM", image: corsoPreAfam, modalDescription: "I Corsi Propedeutici AFAM sono stati istituiti dal Conservatorio Licinio Refice al fine di offrire agli studenti, già in possesso di competenze strumentali /musicali, l'opportunità di completare o di perfezionare la loro preparazione all'esame di ammissione al Triennio Accademico AFAM di 1° livello." },
+    { name: "CORSI DI STRUMENTO PERSONALIZZATI", image: corsoDiStrumento, modalDescription: "Corsi di strumento personalizzati sulla base delle esigenze e preparazione del singolo studente" },
+    { name: "LABORATORI", image: corsoDiStrumento, modalDescription: "La nostra associazione offre una varietà di laboratori pensati per tutti gli appassionati di musica, dai principianti ai musicisti più esperti." }
   ];
 
-  const handleSectionClick = (section) => {
-    if (section.name === "CORSI DI STRUMENTO") navigate("/corsi");
-    if (section.name === "LABORATORI") navigate("/laboratori");
-  }
+  const handleSectionClick = (section) => setSelectedCard(section);
+
+  const style = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: 400,
+    backgroundColor: 'white',
+    boxShadow: 24,
+    p: 4,
+    padding: "20px"
+  };
 
   return (
     <React.Fragment>
       <AppBar />
+      <Modal
+        open={!!selectedCard}
+        onClose={() => setSelectedCard()}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box style={style}>
+          <Close sx={{ float: "right", cursor: "pointer" }} onClick={() => setSelectedCard()} />
+          <Typography component="div" variant="h6">
+            Descrizione
+          </Typography>
+          {selectedCard && selectedCard.modalDescription}
+        </Box>
+
+      </Modal>
       <Container maxWidth="xl" sx={{ display: "flex", flexDirection: "column", gap: "20px", paddingBottom: "24px", zIndex: 0 }}>
         <Card>
           <Grid container >

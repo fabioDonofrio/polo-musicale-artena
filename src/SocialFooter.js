@@ -1,6 +1,6 @@
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import { Container, Link, Toolbar } from "@mui/material";
+import { Container, Link, Toolbar, Typography } from "@mui/material";
 import { useTheme } from '@mui/material/styles';
 
 function SocialFooter() {
@@ -12,11 +12,12 @@ function SocialFooter() {
   ]
 
   return (
-    <Container maxWidth="xl" sx={{}}>
+    <Container maxWidth="xl" sx={{ position: "sticky", bottom: 0 }}>
       <Toolbar
         component="nav"
         variant="dense"
       >
+        <Typography variant="string" sx={{ color: "#BDD054" }}>Segui le nostre pagine per le ultime novità e le date dei prossimi concerti</Typography>
         {social.map(s => (
           <Link
             color={theme.palette.secondary.main}
@@ -24,7 +25,7 @@ function SocialFooter() {
             href={s.href}
             target="_blank"
             rel="noopener noreferrer"
-            sx={{ p: 1, flexShrink: 0, cursor: "pointer" }}
+            sx={{ p: 1, flexShrink: 0, cursor: "pointer", padding: "8px 8px 2px 8px" }}
             underline="none"
           >
             <s.icon />

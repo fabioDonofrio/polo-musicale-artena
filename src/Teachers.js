@@ -66,6 +66,7 @@ function Teachers(props) {
       transition: 'transform 1s',
       transform: 'scale(1.02)',
       transformOrigin: 'top left',
+      borderBottom: '7px solid #BDD054'
     }
   })
 
@@ -117,12 +118,7 @@ function Teachers(props) {
                   sx={{
                     position: "relative",
                     display: "flex",
-                    justifyContent: "center",
-                    ...(selectedTeacher && selectedTeacher.name === t.name) && {
-                      borderBottom: '7px solid #BDD054',
-                      transform: 'scale(1.02)',
-                      transformOrigin: 'top left',
-                    }
+                    justifyContent: "center"
                   }}
                 >
                   <CardMedia
