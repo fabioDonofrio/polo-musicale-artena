@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/polo-musicale-artena/static/css/main.f855e6bc.css",
-    "main.js": "/polo-musicale-artena/static/js/main.7044f671.js",
+    "main.js": "/polo-musicale-artena/static/js/main.57a62b82.js",
     "static/js/453.4f53accf.chunk.js": "/polo-musicale-artena/static/js/453.4f53accf.chunk.js",
     "static/media/piano.webp": "/polo-musicale-artena/static/media/piano.04a0b046121e2e62b0bd.webp",
     "static/media/trumpet.webp": "/polo-musicale-artena/static/media/trumpet.ff67a22efee16fd22a93.webp",
@@ -15,10 +15,10 @@
     "static/media/caturelli.webp": "/polo-musicale-artena/static/media/caturelli.be28f16d69a5b744f61b.webp",
     "static/media/santisi.webp": "/polo-musicale-artena/static/media/santisi.3cc12dc277b057fb9e0b.webp",
     "static/media/valeri.webp": "/polo-musicale-artena/static/media/valeri.471e7d1146b3af6b32c4.webp",
-    "static/media/banda.webp": "/polo-musicale-artena/static/media/banda.13084dc8be464844dee9.webp",
     "static/media/talone.webp": "/polo-musicale-artena/static/media/talone.9a09c046bfa6d4c2b742.webp",
     "static/media/hdRecording.webp": "/polo-musicale-artena/static/media/hdRecording.370c1c990de37a72f515.webp",
     "static/media/talpa.webp": "/polo-musicale-artena/static/media/talpa.abd41c9dcfdf2f432520.webp",
+    "static/media/banda.webp": "/polo-musicale-artena/static/media/banda.e52a6c7948e90be5ee6e.webp",
     "static/media/solfeggio.webp": "/polo-musicale-artena/static/media/solfeggio.dea79bff1bf999a10bcf.webp",
     "static/media/pizzotti.webp": "/polo-musicale-artena/static/media/pizzotti.6962048fa8bdc31d2416.webp",
     "static/media/girolami.webp": "/polo-musicale-artena/static/media/girolami.9b69a57077f4f13d9f1d.webp",
@@ -47,11 +47,11 @@
     "static/media/logo-pma.webp": "/polo-musicale-artena/static/media/logo-pma.c00d1b5920c5c0572def.webp",
     "index.html": "/polo-musicale-artena/index.html",
     "main.f855e6bc.css.map": "/polo-musicale-artena/static/css/main.f855e6bc.css.map",
-    "main.7044f671.js.map": "/polo-musicale-artena/static/js/main.7044f671.js.map",
+    "main.57a62b82.js.map": "/polo-musicale-artena/static/js/main.57a62b82.js.map",
     "453.4f53accf.chunk.js.map": "/polo-musicale-artena/static/js/453.4f53accf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.7044f671.js"
+    "static/js/main.57a62b82.js"
   ]
 }
