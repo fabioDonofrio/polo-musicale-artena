@@ -164,10 +164,7 @@ function App() {
           }
         />
       </>
-    ),
-    {
-      basename: '/polo-musicale-artena'
-    }
+    )
   );
   return (
     <ThemeProvider theme={defaultTheme}>
