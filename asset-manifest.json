@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.f855e6bc.css",
-    "main.js": "/static/js/main.ff81e0ee.js",
+    "main.js": "/static/js/main.90bab9ee.js",
     "static/js/453.4f53accf.chunk.js": "/static/js/453.4f53accf.chunk.js",
     "static/media/piano.webp": "/static/media/piano.04a0b046121e2e62b0bd.webp",
     "static/media/trumpet.webp": "/static/media/trumpet.ff67a22efee16fd22a93.webp",
@@ -11,6 +11,7 @@
     "static/media/flute.webp": "/static/media/flute.859052038dd538734416.webp",
     "static/media/bass.webp": "/static/media/bass.58fa2e36ebd73f596982.webp",
     "static/media/armoniaClassica.webp": "/static/media/armoniaClassica.3e234b0ed7cc2df3b4c3.webp",
+    "static/media/granaio.webp": "/static/media/granaio.46463ab657316cf6bd90.webp",
     "static/media/cello.webp": "/static/media/cello.de01ff477dc608b4ac97.webp",
     "static/media/caturelli.webp": "/static/media/caturelli.be28f16d69a5b744f61b.webp",
     "static/media/santisi.webp": "/static/media/santisi.3cc12dc277b057fb9e0b.webp",
@@ -28,30 +29,39 @@
     "static/media/linguaInglese.webp": "/static/media/linguaInglese.589cd5d71d45cd2e691a.webp",
     "static/media/diRe.webp": "/static/media/diRe.5131617bf079dc3cc596.webp",
     "static/media/petretti.webp": "/static/media/petretti.f1228d8ab2c694cd06d4.webp",
+    "static/media/coro.webp": "/static/media/coro.82ab0a781738c4e7dbe7.webp",
     "static/media/drums.webp": "/static/media/drums.07b6d3e6b67d3edc99b9.webp",
     "static/media/raponi.webp": "/static/media/raponi.29cb95a403e82cdee021.webp",
     "static/media/roffi.webp": "/static/media/roffi.7f1484346fa74769d188.webp",
     "static/media/corsoDiStrumento.webp": "/static/media/corsoDiStrumento.f9d2a9b1c7f28aacf19a.webp",
     "static/media/taloneS.webp": "/static/media/taloneS.756bafb46fd1f9883998.webp",
+    "static/media/storiaDellaMusica.webp": "/static/media/storiaDellaMusica.f30e434b0db1d51595c9.webp",
     "static/media/palombi.webp": "/static/media/palombi.e02ced04e51517557d87.webp",
     "static/media/guitar.webp": "/static/media/guitar.ef39b76768443e8efd00.webp",
     "static/media/corsoPreAfam.webp": "/static/media/corsoPreAfam.d270e8de513e5f7744c1.webp",
     "static/media/corsoDiBase.webp": "/static/media/corsoDiBase.4e4a3eafd295eadc73d7.webp",
     "static/media/sax.webp": "/static/media/sax.a6d676c033b65936d0c9.webp",
     "static/media/mele.webp": "/static/media/mele.8bb86807185f8a57e1de.webp",
+    "static/media/keyboard.webp": "/static/media/keyboard.1556ac45a7e0dd0362ad.webp",
     "static/media/cecchini.webp": "/static/media/cecchini.1e1b5569163a755937f8.webp",
     "static/media/violin.webp": "/static/media/violin.8b65b2e86f898bc92201.webp",
+    "static/media/mancini.webp": "/static/media/mancini.5c66d525a0a0839a4085.webp",
+    "static/media/propedeuticaMusicale.webp": "/static/media/propedeuticaMusicale.b4c216a08dd8cf199137.webp",
     "static/media/musto.webp": "/static/media/musto.7661fd2a438bb84debef.webp",
     "static/media/latini.webp": "/static/media/latini.e5874bd15798ad2bb295.webp",
+    "static/media/savino.webp": "/static/media/savino.f562a7acf3b2aa41ba8e.webp",
+    "static/media/mirra.webp": "/static/media/mirra.921f358f32e64387b886.webp",
+    "static/media/microphone.webp": "/static/media/microphone.ed227fb8319efd8e453d.webp",
     "static/media/trombone.webp": "/static/media/trombone.4e083ec922595e848a58.webp",
     "static/media/logo-pma.webp": "/static/media/logo-pma.c00d1b5920c5c0572def.webp",
+    "static/media/conservatorio.webp": "/static/media/conservatorio.02bbec2148c1bf50f79d.webp",
     "index.html": "/index.html",
     "main.f855e6bc.css.map": "/static/css/main.f855e6bc.css.map",
-    "main.ff81e0ee.js.map": "/static/js/main.ff81e0ee.js.map",
+    "main.90bab9ee.js.map": "/static/js/main.90bab9ee.js.map",
     "453.4f53accf.chunk.js.map": "/static/js/453.4f53accf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.ff81e0ee.js"
+    "static/js/main.90bab9ee.js"
   ]
 }
