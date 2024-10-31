@@ -9,7 +9,7 @@ import { useTheme } from '@mui/material/styles';
 import corsoDiBase from "./corsoDiBase.webp";
 import corsoPreAfam from "./corsoPreAfam.webp";
 import corsoDiStrumento from "./corsoDiStrumento.webp";
-import conservatorio from "./conservatorio.jpg";
+import conservatorio from "./conservatorio.webp";
 // import { useNavigate } from "react-router-dom";
 import { Close } from '@mui/icons-material';
 // import FaceFeed from './FaceFeed';

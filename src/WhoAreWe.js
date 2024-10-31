@@ -5,7 +5,7 @@ import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import granaio from './granaio.jpg';
+import granaio from './granaio.webp';
 import AppBar from './AppBar';
 import Container from '@mui/material/Container';
 import SocialFooter from './SocialFooter';
