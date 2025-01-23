@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.f855e6bc.css",
-    "main.js": "/static/js/main.e07e15be.js",
+    "main.js": "/static/js/main.482c34d4.js",
     "static/js/453.4f53accf.chunk.js": "/static/js/453.4f53accf.chunk.js",
-    "static/media/granaio.webp": "/static/media/granaio.46463ab657316cf6bd90.webp",
     "static/media/piano.webp": "/static/media/piano.614c29525a1267f78862.webp",
     "static/media/armoniaClassica.webp": "/static/media/armoniaClassica.f3aaee83c15302334175.webp",
     "static/media/banda.webp": "/static/media/banda.cef88d60b642e6e712a0.webp",
     "static/media/sax.webp": "/static/media/sax.a80a033edc1e61da0f90.webp",
     "static/media/opera.webp": "/static/media/opera.b1f3eed19a7e7d0a1975.webp",
     "static/media/coro.webp": "/static/media/coro.8ad19b32d12fe82080cc.webp",
+    "static/media/chi_siamo.webp": "/static/media/chi_siamo.17778c5b3aa3cd741fb0.webp",
     "static/media/storiaDellaMusica.webp": "/static/media/storiaDellaMusica.95179fe8dc8bc7a85fa7.webp",
     "static/media/drums.webp": "/static/media/drums.491bb8c72b27888e1c0c.webp",
     "static/media/corsoDiStrumento.webp": "/static/media/corsoDiStrumento.08620dcfa2a4b5f12b88.webp",
@@ -57,11 +57,11 @@
     "static/media/conservatorio.webp": "/static/media/conservatorio.02bbec2148c1bf50f79d.webp",
     "index.html": "/index.html",
     "main.f855e6bc.css.map": "/static/css/main.f855e6bc.css.map",
-    "main.e07e15be.js.map": "/static/js/main.e07e15be.js.map",
+    "main.482c34d4.js.map": "/static/js/main.482c34d4.js.map",
     "453.4f53accf.chunk.js.map": "/static/js/453.4f53accf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.e07e15be.js"
+    "static/js/main.482c34d4.js"
   ]
 }
