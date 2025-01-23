@@ -5,7 +5,7 @@ import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import granaio from './granaio.webp';
+import chiSiamo from './chi_siamo.webp';
 import AppBar from './AppBar';
 import Container from '@mui/material/Container';
 import SocialFooter from './SocialFooter';
@@ -21,11 +21,11 @@ function WhoAreWe() {
             <Grid item xl={3} lg={3} md={3}>
               <CardContent>
                 <Typography component="div" variant="h3" sx={{ textTransform: "uppercase", textAlign: "center " }}>
-                  POLO MUSICALE ARTENA P.M.A.
+                  POLO MUSICALE ARTENA
                 </Typography>
                 <Typography component="div" variant="string">
                   Il Polo Musicale Artena è
-                  un’associazione creata e formata
+                  un’associazione culturale creata e formata
                   esclusivamente da docenti diplomati
                   e laureati nei migliori Conservatori
                   italiani con l’unico scopo di
@@ -37,7 +37,7 @@ function WhoAreWe() {
             <Grid item xl={6} lg={6} md={6} sx={{ height: "700px" }}>
               <CardMedia
                 component="img"
-                image={granaio}
+                image={chiSiamo}
                 sx={{ height: "100%", width: "100%", objectFit: "cover" }}
               />
             </Grid>
