@@ -45,7 +45,7 @@ function Courses(props) {
     { image: opera, title: "canto lirico", description: "", teachers: "Maria di Re" },
     { image: microphone, title: "canto pop", description: "", teachers: "Annalaura Talpa" },
     { image: bass, title: "contrabbasso / basso", description: "", teachers: "Giuseppe Talone" },
-    { image: guitar, title: "chitarra classica / moderna / jazz", description: "", teachers: "Fabio Perciballi, Lorenzo Mirra" },
+    { image: guitar, title: "chitarra classica / moderna / jazz", description: "", teachers: "Lorenzo Mirra" },
     { image: drums, title: "batteria & percussioni", description: "", teachers: "Simone Talone, Adolfo Valeri" },
     { image: trumpet, title: "tromba", description: "", teachers: "Mario Caporilli" },
     { image: trombone, title: "trombone", description: "", teachers: "Federico Cecchini" },
@@ -55,18 +55,18 @@ function Courses(props) {
     { image: sax, title: "sax", description: "", teachers: "Danilo Raponi" },
     { image: flute, title: "flauto", description: "", teachers: "Ilaria Latini" },
     { image: oboe, title: "oboe", description: "", teachers: "Floria Girolami" },
-    { image: clarinet, title: "clarinetto", description: "", teachers: "Massimo Caturelli" }
+    { image: clarinet, title: "clarinetto", description: "", teachers: "Massimo Caturelli" },
+    { image: solfeggio, title: "solfeggio", description: "", teachers: "" },
+    { image: armoniaClassica, title: "armonia classica", description: "", teachers: "Massimo Caturelli" },
   ]
 
   const labs = [
-    { image: solfeggio, title: "solfeggio", description: "", teachers: "" },
-    { image: armoniaClassica, title: "armonia classica", description: "", teachers: "Massimo Caturelli" },
     { image: coro, title: "coro", description: "", teachers: "Maria di Re" },
-    { image: hdRecording, title: "hd recording", description: "", teachers: "Tiziano Palombi" },
-    { image: storiaDellaMusica, title: "storia della musica", description: "", teachers: "" },
-    { image: propedeuticaMusicale, title: "propedeutica musicale", description: "", teachers: "Irene Mele" },
     { image: banda, title: "banda", description: "", teachers: "Federico Cecchini" },
-    { image: linguaInglese, title: "lingua inglese", description: "", teachers: "" }
+    { image: hdRecording, title: "hd recording", description: "", teachers: "Tiziano Palombi" },
+    // { image: storiaDellaMusica, title: "storia della musica", description: "", teachers: "" },
+    // { image: propedeuticaMusicale, title: "propedeutica musicale", description: "", teachers: "Irene Mele" },
+    { image: linguaInglese, title: "lingua inglese", description: "", teachers: "Giulia De Castris" }
   ]
 
   const ZoomCard = styled(Card)({

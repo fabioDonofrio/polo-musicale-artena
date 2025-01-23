@@ -71,8 +71,8 @@ const Contacts = (props) => {
                 </div>
                 <div style={{ marginLeft: "20px", marginLeft: "5px" }}>
                   <AccessTimeIcon sx={{ color: "#BDD054", fontSize: "35px", paddingRight: "3px" }} />
-                  <Typography variant="string" sx={{ marginLeft: "10px", verticalAlign: "super" }}>Lunedì, martedì, giovedì, venerdì:</Typography>
-                  <Typography variant="string" sx={{ marginLeft: "10px", verticalAlign: "super", color: "#BDD054" }}>16:00 - 19:00</Typography>
+                  <Typography variant="string" sx={{ marginLeft: "10px", verticalAlign: "super" }}>Dal lunedì al venerdì:</Typography>
+                  <Typography variant="string" sx={{ marginLeft: "10px", verticalAlign: "super", color: "#BDD054" }}>14:00 - 20:00</Typography>
                 </div>
                 <Typography variant="h4" sx={{ color: "#BDD054" }}>Contatti</Typography>
                 {contact("tel", "3284571854")}
