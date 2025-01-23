@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.f855e6bc.css",
-    "main.js": "/static/js/main.482c34d4.js",
+    "main.js": "/static/js/main.6da223fe.js",
     "static/js/453.4f53accf.chunk.js": "/static/js/453.4f53accf.chunk.js",
     "static/media/piano.webp": "/static/media/piano.614c29525a1267f78862.webp",
     "static/media/armoniaClassica.webp": "/static/media/armoniaClassica.f3aaee83c15302334175.webp",
@@ -38,7 +38,6 @@
     "static/media/girolami.webp": "/static/media/girolami.8327c210913018a9be21.webp",
     "static/media/keyboard.webp": "/static/media/keyboard.0689347a138abebd6324.webp",
     "static/media/petretti.webp": "/static/media/petretti.08216633fbafa849da97.webp",
-    "static/media/perciballi.webp": "/static/media/perciballi.0367211a8558ad0f39d1.webp",
     "static/media/bass.webp": "/static/media/bass.acdc7b2c8c745b241d7f.webp",
     "static/media/roffi.webp": "/static/media/roffi.4f73e8c4e17487a9bbc4.webp",
     "static/media/savino.webp": "/static/media/savino.58e8641cda6e91346184.webp",
@@ -48,7 +47,6 @@
     "static/media/palombi.webp": "/static/media/palombi.d2c413d3cdad9a71dbe8.webp",
     "static/media/mancini.webp": "/static/media/mancini.4b333537e32c403e0710.webp",
     "static/media/trumpet.webp": "/static/media/trumpet.5bc78f7f1763b55a3e4f.webp",
-    "static/media/mele.webp": "/static/media/mele.a02f318460a296dcbf76.webp",
     "static/media/cecchini.webp": "/static/media/cecchini.819c71a9b6978f28253c.webp",
     "static/media/musto.webp": "/static/media/musto.297528f12c71ffc275e9.webp",
     "static/media/latini.webp": "/static/media/latini.b4dd05b9854679fd089f.webp",
@@ -57,11 +55,11 @@
     "static/media/conservatorio.webp": "/static/media/conservatorio.02bbec2148c1bf50f79d.webp",
     "index.html": "/index.html",
     "main.f855e6bc.css.map": "/static/css/main.f855e6bc.css.map",
-    "main.482c34d4.js.map": "/static/js/main.482c34d4.js.map",
+    "main.6da223fe.js.map": "/static/js/main.6da223fe.js.map",
     "453.4f53accf.chunk.js.map": "/static/js/453.4f53accf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.482c34d4.js"
+    "static/js/main.6da223fe.js"
   ]
 }
