@@ -59,8 +59,9 @@ function Courses(props) {
     { image: solfeggio, title: "solfeggio", description: "", teachers: ["Alessio Pizzotti"] },
     { image: armoniaClassica, title: "armonia classica", description: "", teachers: ["Massimo Caturelli"] },
   ]
-  const [coursesCollapse, setCoursesCollapse] = React.useState(new Array(courses.length).fill(true));
+
   const [isHovered, setIsHovered] = React.useState(null);
+  const [isMoving, setIsMoving] = React.useState(false);
   // const [selectedCourse, setSelectedCourse] = React.useState();
 
   const labs = [
@@ -121,10 +122,13 @@ function Courses(props) {
   //   padding: "20px"
   // };
 
-  const handleCourseCollapse = (index) => {
-    const newCoursesCollapse = [...coursesCollapse];
-    newCoursesCollapse[index] = !newCoursesCollapse[index];
-    setCoursesCollapse(newCoursesCollapse);
+  const handleTouchEnd = (c) => {
+    if (isMoving) {
+      setIsMoving(false);
+      setIsHovered(null);
+    }
+    else
+      setIsHovered(c)
   }
 
   return (
@@ -165,7 +169,7 @@ function Courses(props) {
         <Grid container spacing={2}>
           {((props.showLabs && labs) || courses).map((c, index) => (
             <Grid item xl={3} lg={4} md={6} sm={6} xs={12}>
-              <CardActionArea component="button" onClick={() => handleCourseCollapse(index)}>
+              <CardActionArea component="button">
                 <ZoomCard
                   sx={{
                     position: "relative",
@@ -174,8 +178,8 @@ function Courses(props) {
                     ...(isHovered && isHovered.title === c.title) && { borderBottom: '7px solid #BDD054' }
                   }}
                   className={`card ${isHovered && isHovered.title === c.title ? 'hover-touch' : ''}`}
-                  onTouchStart={() => setIsHovered(c)}  // Quando l'utente tocca il div, mostra il figlio
-                  onTouchEnd={() => setIsHovered(null)}
+                  onTouchMove={() => setIsMoving(true)}
+                  onTouchEnd={() => handleTouchEnd(c)}
                 >
                   <div className="card-content-wrapper" style={{ width: "100%" }}>
                     <CardMedia
