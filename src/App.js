@@ -148,7 +148,15 @@ function App() {
           }
         />
         <Route
-          path="/docenti"
+          path="/docenti/"
+          element={
+            <ScrollToTop>
+              <Teachers />
+            </ScrollToTop>
+          }
+        />
+        <Route
+          path="/docenti/:name"
           element={
             <ScrollToTop>
               <Teachers />

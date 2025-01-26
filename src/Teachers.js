@@ -30,10 +30,13 @@ import AppBar from './AppBar';
 import { Box, CardActionArea, Container, Grow, Modal, styled } from '@mui/material';
 import SocialFooter from './SocialFooter';
 import { Close } from '@mui/icons-material';
+import { useParams } from "react-router";
 
 function Teachers(props) {
 
+  let { name } = useParams();
   const [selectedTeacher, setSelectedTeacher] = React.useState();
+  const refs = React.useRef([]);
 
   const teachers = [
     { image: pizzotti, name: "Alessio Pizzotti", course: "Pianoforte", description: "Pianista – Compositore Diploma di primo livello in pianoforte classico e Diploma di secondo livello in pianoforte e tastiere pop/rock presso il Conservatorio di musica L. Refice di Frosinone con la votazione di 110 e lode. Ha studiato e si diploma in arrangiamento, Synth e tastiere, Ear training presso il “Saint Louis College of Music di Roma”. In Conservatorio ha studiato pianoforte con le insegnanti: Ersilia Ungaro, Gilda Buttà. A New York, dove si trasferisce, studia con i pianisti: Barry Harris, Jon Davis (Jaco Pastorius). Nell’ambito musicale pop ha collaborato in studio e in tour dal 2010 con Massimo Di Cataldo, Marco Mengoni , Francesco Di Giacomo (Banco), Domenica In (Orchestra diretta dal M. Serio), Mezzogiorno in Famiglia (Orchestra diretta dal M. Mazza) Agricantus, Brian Mackey. Ha pubblicato tre album strumentali: Dieci Giorni (2015), In vita (2018) e Beninconia , composto per pianoforte e quartetto d’archi, (2024)." },
@@ -60,6 +63,22 @@ function Teachers(props) {
     { image: latini, name: "Ilaria Latini", course: "Flauto", description: "Ha iniziato lo studio del flauto all’età di 7 anni e si è diplomandomi nel 2014 presso il Conservatorio di Musica “Licinio Refice” di Frosinone. Ha poi frequentato un corso di perfezionamento triennale presso l’Accademia Italiana del Flauto e ha partecipato a diverse masterclass con Maestri di rilievo. Si è esibita in vari contesti culturali, tra cui gli Incontri Musicali “Severino Gazzelloni” a Roma e il “Nepi Festival 2014” con l’Orchestra Accademia “San Giovanni” di Napoli ed in diverse occasioni in duo flauto e pianoforte. Insegna strumento dal 2017 e durante questi anni ha accumulato una significativa esperienza con ragazzi di diverse età." }
   ]
 
+  const scrollToElement = (index) => {
+    if (refs.current[index]) {
+      refs.current[index].scrollIntoView({ behavior: 'smooth', block: "center" });
+    }
+  };
+
+  React.useEffect(() => {
+    if (name) {
+      const index = teachers.findIndex(t => t.name === name);
+      if (index != -1) {
+        setSelectedTeacher(teachers[index]);
+        scrollToElement(index);
+      }
+    }
+  }, [])
+
   const ZoomCard = styled(Card)({
     borderBottom: '7px solid rgba(255,255,255, 0.3)',
     '&:hover': {
@@ -84,6 +103,7 @@ function Teachers(props) {
     maxHeight: "100%",
     overflow: "auto"
   };
+
 
   return (
     <React.Fragment>
@@ -111,7 +131,7 @@ function Teachers(props) {
       </Modal>
       <Container maxWidth="xl" sx={{ paddingBottom: "10px" }}>
         <Grid container spacing={2}>
-          {teachers.map(t => (
+          {teachers.map((t, index) => (
             <Grid item xl={3} lg={4} md={6} sm={6} xs={12}>
               <CardActionArea component="button" onClick={() => setSelectedTeacher(t)}>
                 <ZoomCard
@@ -120,6 +140,7 @@ function Teachers(props) {
                     display: "flex",
                     justifyContent: "center"
                   }}
+                  ref={(el) => (refs.current[index] = el)}
                 >
                   <CardMedia
                     component="img"

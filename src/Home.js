@@ -129,7 +129,7 @@ export default function Home() {
                     component="img"
                     image={section.image}
                     alt="piano description"
-                    sx={{ maxHeight: "300px" }}
+                    sx={{ height: "300px" }}
                   />
                   <CardContent sx={{ position: "absolute", top: "0%", left: "0%", minHeight: "123px" }}>
                     <Typography component="div" variant="h3" sx={{ textTransform: "uppercase" }}>
