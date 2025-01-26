@@ -4,6 +4,7 @@ import { styled } from "@mui/system";
 import Container from '@mui/material/Container';
 // import piano from "./piano.webp";
 import collageHome from "./collageHome.webp";
+import collageHomeSm from "./collageHomeSm.webp";
 import AppBar from './AppBar'
 import SocialFooter from './SocialFooter';
 import { useTheme } from '@mui/material/styles';
@@ -102,7 +103,16 @@ export default function Home() {
                 alt="piano description"
                 sx={{
                   height: { xl: "300px", lg: "300px", md: "300px", sm: "300px", xs: "375px" },
-
+                  display: { xl: "block", lg: "block", md: "block", sm: "none", xs: "none" }
+                }}
+              />
+              <BlurCardMedia
+                component="img"
+                image={collageHomeSm}
+                alt="piano description"
+                sx={{
+                  height: { xl: "300px", lg: "300px", md: "300px", sm: "300px", xs: "375px" },
+                  display: { xl: "none", lg: "none", md: "none", sm: "block", xs: "block" }
                 }}
               />
               <CardContent sx={{ position: "absolute", top: "6%", left: "2%" }}>
