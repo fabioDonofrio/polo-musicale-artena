@@ -2,7 +2,8 @@ import * as React from 'react';
 import { Box, Card, CardActionArea, CardContent, CardMedia, Grid, Modal, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 import Container from '@mui/material/Container';
-import piano from "./piano.webp";
+// import piano from "./piano.webp";
+import collageHome from "./collageHome.webp";
 import AppBar from './AppBar'
 import SocialFooter from './SocialFooter';
 import { useTheme } from '@mui/material/styles';
@@ -31,10 +32,10 @@ export default function Home() {
   })
 
   const BlurCardMedia = styled(CardMedia)({
-    WebkitFilter: "blur(3px)",
-    MozFilter: "blur(3px)",
-    OFilter: "blur(3px)",
-    MsFilter: "blur(3px)"
+    WebkitFilter: "blur(0px)",
+    MozFilter: "blur(0px)",
+    OFilter: "blur(0px)",
+    MsFilter: "blur(0px)"
   })
 
   const cardsPages = [
@@ -42,19 +43,19 @@ export default function Home() {
       name: "SCUOLA DI BASE",
       image: corsoDiBase,
       modalDescription: "I corsi base sono stati istituiti al fine di offrire agli studenti, in possesso di competenze strumentali /musicali primarie o ancora da acquisire, l’opportunità di proseguire o di iniziare la loro preparazione strumentale e musicale all’interno di un contesto da sempre dedicato alla musica. La possibilità di vivere fin dall’inizio a stretto contatto con tanti altri giovani musicisti e tante Scuole strumentali e musicali costituisce una occasione unica nel sistema formativo italiano di tradizione. I Corsi Base si concludono con un Esame di Certificazione. Gli studi possono poi continuare con l’ iscrizione ai Corsi Propedeutici AFAM.",
-      size: 4
+      size: { xl: 4, lg: 4, md: 4, sm: 12, xs: 12 }
     },
     {
       name: "PRE AFAM",
       image: corsoPreAfam,
       modalDescription: "I corsi propedeutici AFAM sono stati istituiti al fine di offrire agli studenti, già in possesso di competenze strumentali /musicali, l'opportunità di completare o di perfezionare la loro preparazione all'esame di ammissione al Triennio Accademico AFAM di 1° livello.",
-      size: 4
+      size: { xl: 4, lg: 4, md: 4, sm: 12, xs: 12 }
     },
     {
       name: "CORSI PROFESSIONALI DI STRUMENTO",
       image: corsoDiStrumento,
       modalDescription: "corsi di strumento personalizzati sulla base delle esigenze e preparazione del singolo studente",
-      size: 4
+      size: { xl: 4, lg: 4, md: 4, sm: 12, xs: 12 }
     },
     // { name: "LABORATORI", image: corsoDiStrumento, modalDescription: "La nostra associazione offre una varietà di laboratori pensati per tutti gli appassionati di musica, dai principianti ai musicisti più esperti." }
   ];
@@ -97,17 +98,19 @@ export default function Home() {
             <Grid item xl={12} lg={12} md={12} sm={12} sx={{ position: "relative" }}>
               <BlurCardMedia
                 component="img"
-                image={piano}
+                image={collageHome}
                 alt="piano description"
                 sx={{
-                  height: { xl: "250px", lg: "250px", md: "250px", sm: "250px", xs: "375px" },
+                  height: { xl: "300px", lg: "300px", md: "300px", sm: "300px", xs: "375px" },
 
                 }}
               />
-              <CardContent sx={{ position: "absolute", top: "0%", left: "2%" }}>
+              <CardContent sx={{ position: "absolute", top: "6%", left: "2%" }}>
                 <Typography component="div" variant="h2" sx={{ textTransform: "uppercase" }}>
                   POLO MUSICALE ARTENA
                 </Typography>
+              </CardContent>
+              <CardContent sx={{ position: "absolute", bottom: "0%", left: "2%" }}>
                 <div style={{ backgroundColor: "rgba(50, 50, 50, 0.8)", width: "100%", borderRadius: "3px", padding: "0 10px" }}>
                   <Typography component="div" variant="h6">
                     Scuola di base del Conservatorio L. Refice di Frosinone
@@ -122,14 +125,14 @@ export default function Home() {
         </Card>
         <Grid container spacing={3}>
           {cardsPages.map(section => (
-            <Grid item xl={section.size} lg={section.size} md={section.size} sm={section.size}>
-              <ZoomCard sx={{ position: "relative" }}>
+            <Grid item {...section.size}>
+              <ZoomCard sx={{ position: "relative", width: "100%" }}>
                 <CardActionArea component="button" onClick={() => handleSectionClick(section)}>
                   <CardMedia
                     component="img"
                     image={section.image}
                     alt="piano description"
-                    sx={{ height: "300px" }}
+                    sx={{ height: "250px" }}
                   />
                   <CardContent sx={{ position: "absolute", top: "0%", left: "0%", minHeight: "123px" }}>
                     <Typography component="div" variant="h3" sx={{ textTransform: "uppercase" }}>
@@ -142,7 +145,7 @@ export default function Home() {
                     }
                   </CardContent>
                   {(section.name === "SCUOLA DI BASE" || section.name === "PRE AFAM") &&
-                    <img src={conservatorio} style={{ position: "absolute", bottom: "10%", left: "35%" }} />
+                    <img src={conservatorio} style={{ position: "absolute", bottom: "5%", left: "35%" }} />
                   }
                 </CardActionArea>
               </ZoomCard>
