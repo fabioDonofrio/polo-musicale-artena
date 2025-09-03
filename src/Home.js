@@ -12,6 +12,7 @@ import corsoDiBase from "./corsoDiBase.webp";
 import corsoPreAfam from "./corsoPreAfam.webp";
 import corsoDiStrumento from "./corsoDiStrumento.webp";
 import conservatorio from "./conservatorio.webp";
+import regione from "./regione.png";
 // import { useNavigate } from "react-router-dom";
 import { Close } from '@mui/icons-material';
 // import FaceFeed from './FaceFeed';
@@ -174,6 +175,19 @@ export default function Home() {
             <Typography component="div" variant="h5">
               J.S.BACH
             </Typography>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardContent sx={{ display: "flex", flexDirection: "column", gap: "20px", alignItems: "center" }}>
+            <Typography component="div" variant="string">
+              Scuola di educazione musicale iscritta all'elenco regionale della Regione Lazio
+            </Typography>
+            <CardMedia
+              sx={{ width: "214px" }}
+              component="img"
+              image={regione}
+              alt="piano description"
+            />
           </CardContent>
         </Card>
       </Container>
