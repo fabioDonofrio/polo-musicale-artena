@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Box, Card, CardActionArea, CardContent, CardMedia, Grid, Modal, Typography } from "@mui/material";
-import { styled } from "@mui/system";
+import { height, styled } from "@mui/system";
 import Container from '@mui/material/Container';
 // import piano from "./piano.webp";
 import collageHome from "./collageHome.webp";
@@ -13,6 +13,8 @@ import corsoPreAfam from "./corsoPreAfam.webp";
 import corsoDiStrumento from "./corsoDiStrumento.webp";
 import conservatorio from "./conservatorio.webp";
 import regione from "./regione.png";
+import loc from "./loc.webp"
+import loc_vert from "./loc_vert.webp"
 // import { useNavigate } from "react-router-dom";
 import { Close } from '@mui/icons-material';
 // import FaceFeed from './FaceFeed';
@@ -134,6 +136,18 @@ export default function Home() {
             </Grid>
           </Grid>
         </Card>
+        <Card>
+          <CardMedia
+            component="img"
+            image={loc}
+            sx={{ display: { xl: "block", lg: "block", md: "block", sm: "none", xs: "none" } }}
+          />
+          <CardMedia
+            component="img"
+            image={loc_vert}
+            sx={{ display: { xl: "none", lg: "none", md: "none", sm: "block", xs: "block" } }}
+          />
+        </Card>
         <Grid container spacing={3}>
           {cardsPages.map(section => (
             <Grid item {...section.size}>
@@ -165,29 +179,29 @@ export default function Home() {
         </Grid>
         <Grid container >
         </Grid>
+        <Typography component="div" variant="h5" sx={{ textAlign: "center" }}>
+          “La musica aiuta a
+          non sentire dentro il
+          silenzio che c'è fuori.” J.S.BACH
+        </Typography>
         <Card>
-          <CardContent sx={{ display: "flex", flexDirection: "row", justifyContent: "space-around" }}>
-            <Typography component="div" variant="h5">
-              “La musica aiuta a
-              non sentire dentro il
-              silenzio che c'è fuori.”
-            </Typography>
-            <Typography component="div" variant="h5">
-              J.S.BACH
-            </Typography>
-          </CardContent>
-        </Card>
-        <Card>
-          <CardContent sx={{ display: "flex", flexDirection: "column", gap: "20px", alignItems: "center" }}>
-            <Typography component="div" variant="string">
-              Scuola di educazione musicale iscritta all'elenco regionale della Regione Lazio
-            </Typography>
+          <CardContent
+            sx={{
+              display: "flex",
+              flexDirection: { xl: "row", lg: "row", md: "row", sm: "column", xs: "column" },
+              gap: "20px",
+              alignItems: "center"
+            }}
+          >
             <CardMedia
-              sx={{ width: "214px" }}
+              sx={{ width: { xl: "150px", lg: "150px", md: "150px", sm: "150px", xs: "150px" } }}
               component="img"
               image={regione}
               alt="piano description"
             />
+            <Typography component="div" variant="string">
+              Scuola di educazione musicale iscritta all'elenco regionale della Regione Lazio
+            </Typography>
           </CardContent>
         </Card>
       </Container>
