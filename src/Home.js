@@ -15,10 +15,9 @@ import conservatorio from "./conservatorio.webp";
 import regione from "./regione.png";
 import loc from "./loc.webp"
 import loc_vert from "./loc_vert.webp"
-// import { useNavigate } from "react-router-dom";
+import locandina_cross_polo_sound_2025 from "./events_images/cross_polo_sound_2025/locandina_cross_polo_sound_2025.webp";
 import { Close } from '@mui/icons-material';
-// import FaceFeed from './FaceFeed';
-// import InstagramPosts from './InstagramPosts'; 
+import ImageCarousel from './common/ImageCarousel';
 
 export default function Home() {
   const [selectedCard, setSelectedCard] = React.useState();
@@ -78,6 +77,21 @@ export default function Home() {
     padding: "20px"
   };
 
+  const carouselItems = [
+    {
+      imageDesktop: locandina_cross_polo_sound_2025,
+      imageMobile: locandina_cross_polo_sound_2025,
+      link: "/eventi",
+      alt: "Cross polo sound 2025/2026",
+    },
+    {
+      imageDesktop: loc,
+      imageMobile: loc_vert,
+      link: "/contatti",
+      alt: "Iscrizione corsi 2025/2026",
+    }
+  ];
+
   return (
     <React.Fragment>
       <AppBar />
@@ -136,18 +150,9 @@ export default function Home() {
             </Grid>
           </Grid>
         </Card>
-        <Card>
-          <CardMedia
-            component="img"
-            image={loc}
-            sx={{ display: { xl: "block", lg: "block", md: "block", sm: "none", xs: "none" } }}
-          />
-          <CardMedia
-            component="img"
-            image={loc_vert}
-            sx={{ display: { xl: "none", lg: "none", md: "none", sm: "block", xs: "block" } }}
-          />
-        </Card>
+        <ImageCarousel
+          items={carouselItems}
+        />
         <Grid container spacing={3}>
           {cardsPages.map(section => (
             <Grid item {...section.size}>

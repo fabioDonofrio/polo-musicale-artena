@@ -14,6 +14,7 @@ import { createTheme, responsiveFontSizes, ThemeProvider } from '@mui/material/s
 import Teachers from "./Teachers";
 import ScrollToTop from "./ScrollToTop";
 import Contacts from "./Contacts";
+import Events from "./Events";
 
 function App() {
   let defaultTheme = createTheme({
@@ -168,6 +169,14 @@ function App() {
           element={
             <ScrollToTop>
               <Contacts />
+            </ScrollToTop>
+          }
+        />
+        <Route
+          path="/eventi"
+          element={
+            <ScrollToTop>
+              <Events />
             </ScrollToTop>
           }
         />
