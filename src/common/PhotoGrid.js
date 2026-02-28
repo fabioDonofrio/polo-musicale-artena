@@ -5,40 +5,55 @@ import {
     Dialog,
     DialogContent,
     IconButton,
+    useMediaQuery,
+    useTheme,
 } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
+import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 const PhotoGrid = ({ images }) => {
     const [open, setOpen] = useState(false);
-    const [selectedImage, setSelectedImage] = useState(null);
+    const [selectedIndex, setSelectedIndex] = useState(null);
 
-    const handleOpen = (image) => {
-        setSelectedImage(image);
+    const theme = useTheme();
+    const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+
+    const handleOpen = (index) => {
+        setSelectedIndex(index);
         setOpen(true);
     };
 
     const handleClose = () => {
         setOpen(false);
-        setSelectedImage(null);
+        setSelectedIndex(null);
+    };
+
+    const handleNext = () => {
+        setSelectedIndex((prev) =>
+            prev === images.length - 1 ? 0 : prev + 1
+        );
+    };
+
+    const handlePrev = () => {
+        setSelectedIndex((prev) =>
+            prev === 0 ? images.length - 1 : prev - 1
+        );
     };
 
     return (
         <>
-            {/* GRID */}
             <Grid container spacing={1}>
                 {images.map((img, index) => (
                     <Grid item xs={4} sm={3} md={2} key={index}>
                         <Box
-                            onClick={() => handleOpen(img)}
+                            onClick={() => handleOpen(index)}
                             sx={{
                                 position: "relative",
                                 width: "100%",
-                                paddingTop: "100%", // quadrato
+                                paddingTop: "100%",
                                 overflow: "hidden",
                                 cursor: "pointer",
-                                "&:hover img": {
-                                    transform: "scale(1.05)",
-                                },
                             }}
                         >
                             <Box
@@ -53,7 +68,6 @@ const PhotoGrid = ({ images }) => {
                                     width: "100%",
                                     height: "100%",
                                     objectFit: "cover",
-                                    transition: "transform 0.3s ease",
                                 }}
                             />
                         </Box>
@@ -61,20 +75,18 @@ const PhotoGrid = ({ images }) => {
                 ))}
             </Grid>
 
-            {/* MODALE */}
-            <Dialog
-                open={open}
-                onClose={handleClose}
-                maxWidth="md"
-                fullWidth
-            >
+            <Dialog open={open} onClose={handleClose} maxWidth="md" fullWidth>
                 <DialogContent
                     sx={{
                         position: "relative",
                         p: 0,
                         backgroundColor: "black",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
                     }}
                 >
+                    {/* Close */}
                     <IconButton
                         onClick={handleClose}
                         sx={{
@@ -88,10 +100,26 @@ const PhotoGrid = ({ images }) => {
                         <CloseIcon />
                     </IconButton>
 
-                    {selectedImage && (
+                    {/* Freccia sinistra - SOLO desktop */}
+                    {!isMobile && (
+                        <IconButton
+                            onClick={handlePrev}
+                            sx={{
+                                position: "absolute",
+                                left: 16,
+                                color: "#fff",
+                                zIndex: 2,
+                            }}
+                        >
+                            <ArrowBackIosNewIcon />
+                        </IconButton>
+                    )}
+
+                    {/* Immagine */}
+                    {selectedIndex !== null && (
                         <Box
                             component="img"
-                            src={selectedImage}
+                            src={images[selectedIndex]}
                             alt="preview"
                             sx={{
                                 width: "100%",
@@ -100,6 +128,21 @@ const PhotoGrid = ({ images }) => {
                                 objectFit: "contain",
                             }}
                         />
+                    )}
+
+                    {/* Freccia destra - SOLO desktop */}
+                    {!isMobile && (
+                        <IconButton
+                            onClick={handleNext}
+                            sx={{
+                                position: "absolute",
+                                right: 16,
+                                color: "#fff",
+                                zIndex: 2,
+                            }}
+                        >
+                            <ArrowForwardIosIcon />
+                        </IconButton>
                     )}
                 </DialogContent>
             </Dialog>
