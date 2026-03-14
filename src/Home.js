@@ -1,13 +1,12 @@
 import * as React from 'react';
 import { Box, Card, CardActionArea, CardContent, CardMedia, Grid, Modal, Typography } from "@mui/material";
-import { height, styled } from "@mui/system";
+import { styled } from "@mui/system";
 import Container from '@mui/material/Container';
 // import piano from "./piano.webp";
 import collageHome from "./collageHome.webp";
 import collageHomeSm from "./collageHomeSm.webp";
 import AppBar from './AppBar'
 import SocialFooter from './SocialFooter';
-import { useTheme } from '@mui/material/styles';
 import corsoDiBase from "./corsoDiBase.webp";
 import corsoPreAfam from "./corsoPreAfam.webp";
 import corsoDiStrumento from "./corsoDiStrumento.webp";
