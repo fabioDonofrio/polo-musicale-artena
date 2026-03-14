@@ -72,11 +72,12 @@ function Teachers(props) {
   React.useEffect(() => {
     if (name) {
       const index = teachers.findIndex(t => t.name === name);
-      if (index != -1) {
+      if (index !== -1) {
         setSelectedTeacher(teachers[index]);
         scrollToElement(index);
       }
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   const ZoomCard = styled(Card)({

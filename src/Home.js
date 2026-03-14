@@ -21,7 +21,6 @@ import ImageCarousel from './common/ImageCarousel';
 
 export default function Home() {
   const [selectedCard, setSelectedCard] = React.useState();
-  const theme = useTheme();
   // const navigate = useNavigate();
 
   const ZoomCard = styled(Card)({
@@ -175,7 +174,7 @@ export default function Home() {
                     }
                   </CardContent>
                   {(section.name === "SCUOLA DI BASE" || section.name === "PRE AFAM") &&
-                    <img src={conservatorio} style={{ position: "absolute", bottom: "5%", left: "35%" }} />
+                    <img alt='conservatorio' src={conservatorio} style={{ position: "absolute", bottom: "5%", left: "35%" }} />
                   }
                 </CardActionArea>
               </ZoomCard>

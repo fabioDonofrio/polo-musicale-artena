@@ -46,7 +46,7 @@ function AppBar(props) {
           cursor: "pointer",
         }}
       >
-        <img src={logo} style={{ height: "100%", objectFit: "fill" }} />
+        <img src={logo} alt='logo' style={{ height: "100%", objectFit: "fill" }} />
       </Box>
       <Toolbar
         component="nav"

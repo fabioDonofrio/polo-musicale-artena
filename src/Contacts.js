@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import AppBar from "./AppBar";
 import { Card, CardContent, Container, Grid, Link, Typography } from "@mui/material";
 import { styled } from "@mui/system";
@@ -30,7 +30,7 @@ const Contacts = (props) => {
     : MusicNoteIcon;
 
   const contact = (hrefType, value) => (
-    <div onClick={() => setNoteTranslation(true)} style={{ marginLeft: "20px", marginLeft: "5px" }}>
+    <div onClick={() => setNoteTranslation(true)} style={{ marginLeft: "5px" }}>
       <span>
         {hrefType === "tel"
           ? <CallIcon sx={{ color: "#BDD054", fontSize: "35px" }} />
@@ -64,12 +64,12 @@ const Contacts = (props) => {
               <CardContent sx={{ display: "flex", flexDirection: "column", gap: "10px" }}>
                 <Typography variant="h4" sx={{ color: "#BDD054" }}>Iscrizione ai corsi</Typography>
                 <Typography variant="string">Vieni a trovarci nella nostra sede all'interno di un polo multifunzionale dedicato alle professioni artistiche. Ti aspettiamo!</Typography>
-                <div style={{ marginLeft: "20px", marginLeft: "5px" }}>
+                <div style={{ marginLeft: "5px" }}>
                   <PlaceIcon sx={{ color: "#BDD054", fontSize: "35px" }} />
                   <Typography variant="string" sx={{ marginLeft: "10px", verticalAlign: "super", color: "#BDD054" }}>Museikè</Typography>
                   <Typography variant="string" sx={{ marginLeft: "10px", verticalAlign: "super" }}>(piano terra del Granaio Borghese)</Typography>
                 </div>
-                <div style={{ marginLeft: "20px", marginLeft: "5px" }}>
+                <div style={{ marginLeft: "5px" }}>
                   <AccessTimeIcon sx={{ color: "#BDD054", fontSize: "35px", paddingRight: "3px" }} />
                   <Typography variant="string" sx={{ marginLeft: "10px", verticalAlign: "super" }}>Dal lunedì al venerdì:</Typography>
                   <Typography variant="string" sx={{ marginLeft: "10px", verticalAlign: "super", color: "#BDD054" }}>14:00 - 20:00</Typography>
@@ -84,6 +84,7 @@ const Contacts = (props) => {
           </Grid>
           <Grid item xl={6} lg={6} md={6} sm={12} xs={12}>
             <iframe
+              title="map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3195.7851928929367!2d12.910148276354322!3d41.74073347256526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13257bf24a8fb7e1%3A0x4f79bcadccf6f8bb!2sAssociazione%20Borgo%20dell&#39;Arte%20-%20Museik%C3%A8%20museum!5e0!3m2!1sit!2sit!4v1729338589752!5m2!1sit!2sit"
               width="100%"
               height="500"
