@@ -1,10 +1,11 @@
-import React, { useState } from "react";
-import { Box, IconButton, useTheme, useMediaQuery } from "@mui/material";
+import React, { useEffect, useState } from "react";
+import { Box, IconButton, Typography, useTheme, useMediaQuery } from "@mui/material";
 import { ArrowBackIos, ArrowForwardIos } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 
 const ImageCarousel = ({ items, height = 400 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [autoplay, setAutoPlay] = useState(true);
 
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
@@ -21,6 +22,18 @@ const ImageCarousel = ({ items, height = 400 }) => {
     );
   };
 
+  useEffect(() => {
+    if (!autoplay) return;
+
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) =>
+        prev === items.length - 1 ? 0 : prev + 1
+      );
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [items.length, autoplay]);
+
   return (
     <Box
       sx={{
@@ -29,6 +42,10 @@ const ImageCarousel = ({ items, height = 400 }) => {
         height: height,
         overflow: "hidden",
       }}
+      onTouchStart={() => setAutoPlay(false)}
+      onTouchEnd={() => setAutoPlay(true)}
+      onMouseEnter={() => setAutoPlay(false)}
+      onMouseLeave={() => setAutoPlay(true)}
     >
       <Box
         sx={{
@@ -83,12 +100,34 @@ const ImageCarousel = ({ items, height = 400 }) => {
                 loading="lazy"
                 sx={{
                   position: "relative",
-                  maxWidth: "100%",
-                  maxHeight: "100%",
-                  objectFit: "contain",
+                  maxWidth: { xl: "720px", lg: "720px", md: "720px", sm: "720px", xs: "100%" },
+                  objectFit: "cover",
                   zIndex: 1,
                 }}
               />
+
+              {/* Titolo trasparente */}
+              {item.title && (
+                <Typography
+                  className="carouselTitle"
+                  variant={isMobile ? "h5" : "h3"}
+                  sx={{
+                    position: "absolute",
+                    top: "40%",
+                    color: "#fff",
+                    left: "50%",
+                    transform: "translateX(-50%)",
+                    textAlign: "center",
+                    opacity: 1,
+                    transition: "opacity 0.4s ease",
+                    zIndex: 2,
+                    fontStyle: "italic",
+                    textShadow: "0 4px 10px rgba(0,0,0,1)"
+                  }}
+                >
+                  {item.title}
+                </Typography>
+              )}
             </Box>
           );
         })}
@@ -121,6 +160,37 @@ const ImageCarousel = ({ items, height = 400 }) => {
       >
         <ArrowForwardIos />
       </IconButton>
+      <Box
+        sx={{
+          position: "absolute",
+          bottom: 16,
+          left: "50%",
+          transform: "translateX(-50%)",
+          display: "flex",
+          gap: 1,
+          zIndex: 3,
+        }}
+      >
+        {items.map((_, index) => (
+          <Box
+            key={index}
+            onClick={() => setCurrentIndex(index)}
+            sx={{
+              width: 10,
+              height: 10,
+              borderRadius: "50%",
+              cursor: "pointer",
+              backgroundColor:
+                index === currentIndex
+                  ? "#fff"
+                  : "rgba(255,255,255,0.4)",
+              transition: "all 0.3s",
+              transform:
+                index === currentIndex ? "scale(1.2)" : "scale(1)",
+            }}
+          />
+        ))}
+      </Box>
     </Box>
   );
 };

@@ -12,11 +12,11 @@ import corsoPreAfam from "./corsoPreAfam.webp";
 import corsoDiStrumento from "./corsoDiStrumento.webp";
 import conservatorio from "./conservatorio.webp";
 import regione from "./regione.png";
-import loc from "./loc.webp"
-import loc_vert from "./loc_vert.webp"
-import locandina_cross_polo_sound_2025 from "./events_images/cross_polo_sound_2025/locandina_cross_polo_sound_2025.webp";
+import loc from "./loc.webp";
 import { Close } from '@mui/icons-material';
 import ImageCarousel from './common/ImageCarousel';
+import { eventsData } from './constants/eventsData';
+import { eventImages } from './constants/events_images/event_images';
 
 export default function Home() {
   const [selectedCard, setSelectedCard] = React.useState();
@@ -76,15 +76,16 @@ export default function Home() {
   };
 
   const carouselItems = [
-    {
-      imageDesktop: locandina_cross_polo_sound_2025,
-      imageMobile: locandina_cross_polo_sound_2025,
-      link: "/eventi",
-      alt: "Cross polo sound 2025/2026",
-    },
+    ...eventsData.map(event => ({
+      imageDesktop: eventImages[event.id].carousel.desktop,
+      imageMobile: eventImages[event.id].carousel.mobile,
+      link: `/eventi/${event.id}`,
+      alt: event.title,
+      title: event.carouselTitle
+    })),
     {
       imageDesktop: loc,
-      imageMobile: loc_vert,
+      imageMobile: loc,
       link: "/contatti",
       alt: "Iscrizione corsi 2025/2026",
     }
