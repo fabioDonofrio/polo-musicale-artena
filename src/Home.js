@@ -81,15 +81,19 @@ export default function Home() {
       imageMobile: eventImages[event.id].carousel.mobile,
       link: `/eventi/${event.id}`,
       alt: event.title,
-      title: event.carouselTitle
+      title: event.carouselTitle,
+      dates: event.dates
     })),
     {
       imageDesktop: loc,
       imageMobile: loc,
       link: "/contatti",
       alt: "Iscrizione corsi 2025/2026",
+      dates: ["2025-09-01"]
     }
   ];
+
+  carouselItems.sort((a, b) => new Date(b.dates[0]) - new Date(a.dates[0]));
 
   return (
     <React.Fragment>

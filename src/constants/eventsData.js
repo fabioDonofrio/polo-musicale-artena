@@ -4,18 +4,18 @@ export const eventsData = [
         title: "INCONTRO CON IL CONSERVATORIO L. REFICE",
         carouselTitle: "INCONTRO CON IL CONSERVATORIO L. REFICE",
         description: "Incontro con i docenti del conservatorio *L. Refice* di Frosinone con i nostri allievi del corso base",
-        dates: ["03/03/2026"]
+        dates: ["2026-03-03"]
     },
     {
         id: "cps_2026",
         title: "CROSS POLO SOUND 2026",
         description: "*Cross Polo Sound* è un campus universitario internazionale con studenti del Queens Collage - City University di New York e studenti della Regione Lazio.\n Il progetto è finanziato da Lazio Disco nell'ambito delle politiche di sostegno alla formazione per gli studenti universitari.",
-        dates: ["01/01/2026", "09/01/2026"]
+        dates: ["2026-01-01", "2026-01-09"]
     },
     {
         id: "masterclass_Ganci_03062025",
         title: "Masterclass con il M. Luciano Ganci",
         description: "Ad Artena all'interno del granaio borghese si è svolta la masterclass con un grande tenore e amico M. Luciano Ganci. I ragazzi che hanno partecipato sono stati strepitosi ed attenti ai suggerimenti del maestro. Grazie alla pianista M. Silvia Gentili che ha accompagnato tutti i ragazzi magistralmente.",
-        dates: ["03/06/2025"]
+        dates: ["2025-06-03"]
     }
 ];
