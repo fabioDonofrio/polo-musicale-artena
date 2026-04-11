@@ -1,7 +1,20 @@
 // CAROUSEL
+import masterclass_Ganci_03062025_carousel from "./masterclass_Ganci_03062025/masterclass_Ganci_03062025_carousel.webp";
 import locandina_cross_polo_sound_2025 from "./cross_polo_sound_2025/locandina_cross_polo_sound_2025.webp";
 
 // FULL
+
+// masterclass_Ganci_03062025
+import masterclass_Ganci_03062025_1 from "./masterclass_Ganci_03062025/masterclass_Ganci_03062025_1.webp";
+import masterclass_Ganci_03062025_2 from "./masterclass_Ganci_03062025/masterclass_Ganci_03062025_2.webp";
+import masterclass_Ganci_03062025_3 from "./masterclass_Ganci_03062025/masterclass_Ganci_03062025_3.webp";
+import masterclass_Ganci_03062025_4 from "./masterclass_Ganci_03062025/masterclass_Ganci_03062025_4.webp";
+import masterclass_Ganci_03062025_5 from "./masterclass_Ganci_03062025/masterclass_Ganci_03062025_5.webp";
+import masterclass_Ganci_03062025_6 from "./masterclass_Ganci_03062025/masterclass_Ganci_03062025_6.webp";
+import masterclass_Ganci_03062025_7 from "./masterclass_Ganci_03062025/masterclass_Ganci_03062025_7.webp";
+import masterclass_Ganci_03062025_8 from "./masterclass_Ganci_03062025/masterclass_Ganci_03062025_8.webp";
+import masterclass_Ganci_03062025_9 from "./masterclass_Ganci_03062025/masterclass_Ganci_03062025_9.webp";
+import masterclass_Ganci_03062025_10 from "./masterclass_Ganci_03062025/masterclass_Ganci_03062025_10.webp";
 
 // CPS_2025
 import cps_2025_1 from "./cross_polo_sound_2025/cps_2025_1.webp";
@@ -39,6 +52,18 @@ import cr_03032026_9 from "./conservatorio_repice_03032026/cr_03032026_9.webp";
 
 // THUMBNAILS
 
+// masterclass_Ganci_03062025
+import masterclass_Ganci_03062025_1_t from "./masterclass_Ganci_03062025/thumbnails/masterclass_Ganci_03062025_1.webp";
+import masterclass_Ganci_03062025_2_t from "./masterclass_Ganci_03062025/thumbnails/masterclass_Ganci_03062025_2.webp";
+import masterclass_Ganci_03062025_3_t from "./masterclass_Ganci_03062025/thumbnails/masterclass_Ganci_03062025_3.webp";
+import masterclass_Ganci_03062025_4_t from "./masterclass_Ganci_03062025/thumbnails/masterclass_Ganci_03062025_4.webp";
+import masterclass_Ganci_03062025_5_t from "./masterclass_Ganci_03062025/thumbnails/masterclass_Ganci_03062025_5.webp";
+import masterclass_Ganci_03062025_6_t from "./masterclass_Ganci_03062025/thumbnails/masterclass_Ganci_03062025_6.webp";
+import masterclass_Ganci_03062025_7_t from "./masterclass_Ganci_03062025/thumbnails/masterclass_Ganci_03062025_7.webp";
+import masterclass_Ganci_03062025_8_t from "./masterclass_Ganci_03062025/thumbnails/masterclass_Ganci_03062025_8.webp";
+import masterclass_Ganci_03062025_9_t from "./masterclass_Ganci_03062025/thumbnails/masterclass_Ganci_03062025_9.webp";
+import masterclass_Ganci_03062025_10_t from "./masterclass_Ganci_03062025/thumbnails/masterclass_Ganci_03062025_10.webp";
+
 // CPS_2025
 import cps_2025_1_t from "./cross_polo_sound_2025/thumbnails/cps_2025_1.webp";
 import cps_2025_2_t from "./cross_polo_sound_2025/thumbnails/cps_2025_2.webp";
@@ -74,6 +99,24 @@ import cr_03032026_8_t from "./conservatorio_repice_03032026/cr_03032026_8.webp"
 import cr_03032026_9_t from "./conservatorio_repice_03032026/cr_03032026_9.webp";
 
 export const eventImages = {
+    masterclass_Ganci_03062025: {
+        carousel: {
+            desktop: masterclass_Ganci_03062025_carousel,
+            mobile: masterclass_Ganci_03062025_carousel
+        },
+        detail: [
+            { full: masterclass_Ganci_03062025_1, thumb: masterclass_Ganci_03062025_1_t },
+            { full: masterclass_Ganci_03062025_2, thumb: masterclass_Ganci_03062025_2_t },
+            { full: masterclass_Ganci_03062025_3, thumb: masterclass_Ganci_03062025_3_t },
+            { full: masterclass_Ganci_03062025_4, thumb: masterclass_Ganci_03062025_4_t },
+            { full: masterclass_Ganci_03062025_5, thumb: masterclass_Ganci_03062025_5_t },
+            { full: masterclass_Ganci_03062025_6, thumb: masterclass_Ganci_03062025_6_t },
+            { full: masterclass_Ganci_03062025_7, thumb: masterclass_Ganci_03062025_7_t },
+            { full: masterclass_Ganci_03062025_8, thumb: masterclass_Ganci_03062025_8_t },
+            { full: masterclass_Ganci_03062025_9, thumb: masterclass_Ganci_03062025_9_t },
+            { full: masterclass_Ganci_03062025_10, thumb: masterclass_Ganci_03062025_10_t },
+        ]
+    },
     cps_2026: {
         carousel: {
             desktop: locandina_cross_polo_sound_2025,

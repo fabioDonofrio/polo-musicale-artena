@@ -2,8 +2,8 @@ const sharp = require("sharp");
 const fs = require("fs-extra");
 const path = require("path");
 
-const inputDir = path.join(__dirname, "../src/constants/events_images/conservatorio_repice_03032026");
-const outputDir = path.join(__dirname, "../src/constants/events_images/conservatorio_repice_03032026/thumbnails");
+const inputDir = path.join(__dirname, "../src/constants/events_images/masterclass_Ganci_03062025");
+const outputDir = path.join(__dirname, "../src/constants/events_images/masterclass_Ganci_03062025/thumbnails");
 
 async function generate() {
     await fs.ensureDir(outputDir);

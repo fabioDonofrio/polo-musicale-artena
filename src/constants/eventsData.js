@@ -11,5 +11,11 @@ export const eventsData = [
         title: "CROSS POLO SOUND 2026",
         description: "*Cross Polo Sound* è un campus universitario internazionale con studenti del Queens Collage - City University di New York e studenti della Regione Lazio.\n Il progetto è finanziato da Lazio Disco nell'ambito delle politiche di sostegno alla formazione per gli studenti universitari.",
         dates: ["01/01/2026", "09/01/2026"]
+    },
+    {
+        id: "masterclass_Ganci_03062025",
+        title: "Masterclass con il M. Luciano Ganci",
+        description: "Ad Artena all'interno del granaio borghese si è svolta la masterclass con un grande tenore e amico M. Luciano Ganci. I ragazzi che hanno partecipato sono stati strepitosi ed attenti ai suggerimenti del maestro. Grazie alla pianista M. Silvia Gentili che ha accompagnato tutti i ragazzi magistralmente.",
+        dates: ["03/06/2025"]
     }
 ];
